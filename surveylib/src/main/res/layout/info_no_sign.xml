@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlNoSign"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/oneHundredDp"
+        android:layout_marginBottom="@dimen/eightyDp"
+        android:layout_marginLeft="@dimen/twentyFourDp"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/twentyFourDp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvSkipPopUp"
+            android:padding="@dimen/fourDp"
+            android:visibility="gone"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="@string/skip"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:id="@+id/tvIllSign"
+            android:padding="@dimen/fourDp"
+            android:textSize="@dimen/fourteenSp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:text="@string/signUpCaps"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivIll"
+            android:layout_below="@+id/tvIllSign"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/illustration"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivIll"
+            android:textSize="@dimen/fourteenSp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/popTextInfo"
+            android:text="@string/getStarted"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvq"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/eightDp"
+            android:textSize="@dimen/fourteenSp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/popTextInfo"
+            android:text="@string/poptextsign"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvw"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/tvq"
+            android:textSize="@dimen/fourteenSp"
+            android:text="@string/poptextsign1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvw"
+            android:layout_marginTop="@dimen/twentyFourDp"
+            android:paddingLeft="@dimen/twentyFourDp"
+            android:textSize="@dimen/fourteenSp"
+            android:paddingRight="@dimen/twentyFourDp"
+            android:paddingTop="@dimen/twelveDp"
+            android:paddingBottom="@dimen/twelveDp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/tvSignPopUp"
+            android:textColor="@color/white"
+            android:background="@color/buttoncolor"
+            android:text="@string/signCaps"/>
+    </RelativeLayout>
+
+</RelativeLayout>

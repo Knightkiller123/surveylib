@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bin_and_doc_01"
+        />
+    <TextView
+        android:layout_below="@+id/ivDelete"
+        android:layout_marginTop="@dimen/thirtySixDp"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvWantToDelete"
+        android:text="@string/want_to_delete"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        android:textSize="@dimen/eightenSp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/tvWantToDelete"
+        android:gravity="center"
+        android:padding="@dimen/sixteenDp"
+        android:layout_width="wrap_content"
+        android:alpha="0.6"
+        android:id="@+id/tvDeleteConfirmation"
+        android:text="@string/are_you_really_want_to_delete_the_file_you_will_not_be_able_to_recover_them"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/twelveSp"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+
+        android:padding="@dimen/eightDp"
+        android:layout_marginTop="@dimen/thirtySixDp"
+        android:layout_below="@+id/tvDeleteConfirmation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:background="@drawable/border_grey"
+            android:padding="@dimen/twelveDp"
+            android:layout_weight="1"
+            android:id="@+id/tvCancel"
+            android:layout_marginEnd="@dimen/fourDp"
+            android:textAlignment="center"
+            android:text="@string/cancel"
+            android:alpha="0.7"
+            android:textColor="@color/black"
+            android:textSize="@dimen/twelveSp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="@dimen/fourDp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/background_app_color"
+            android:padding="@dimen/twelveDp"
+            android:layout_weight="1"
+            android:id="@+id/tvDelete"
+            android:textAlignment="center"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twelveSp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

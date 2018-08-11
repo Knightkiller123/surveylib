@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tnfailed"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/oneHundredDp"
+        android:id="@+id/ivSuccess"
+        app:srcCompat="@drawable/round_cross_01"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sorry"
+        android:layout_below="@+id/ivSuccess"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/black"
+        android:id="@+id/tvCong"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opportunity"
+        android:layout_below="@+id/tvCong"
+        android:gravity="center"
+        android:id="@+id/tvApplied"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/eightDp"
+        android:textSize="@dimen/sixteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvApplied"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/black"
+        android:id="@+id/tvAppliedDates"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="@string/startover"
+        android:layout_below="@+id/tvAppliedDates"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fortyEightDp"
+        android:background="@color/buttoncolor"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/thirtyTwoDp"
+        android:paddingEnd="@dimen/thirtyTwoDp"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:id="@+id/tvStartOver"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:layout_below="@+id/tvEsignApll"
+        android:gravity="center"
+        android:id="@+id/tvOrSign"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/thirtyTwoDp"
+        android:textSize="@dimen/sixteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skip"
+        android:layout_below="@+id/tvOrSign"
+        android:gravity="center"
+        android:id="@+id/tvViewApp"
+        android:textColor="@color/buttoncolor"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/fourteenSp"/>
+
+
+
+</RelativeLayout>

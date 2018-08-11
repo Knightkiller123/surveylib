@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:id="@+id/rlSelect"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/twentySp"
+            android:text="@string/filter"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:padding="@dimen/eightDp"
+            app:srcCompat="@drawable/cross"
+            android:id="@+id/ivCrossFilter"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/eightyDp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDp"
+                android:id="@+id/tvFromDate"
+                android:background="@drawable/edittextunfocused"
+                android:text="@string/fromdate"
+                android:textSize="@dimen/fourteenSp"
+                android:textColor="@color/black"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:drawableEnd="@drawable/calendar"
+                android:drawablePadding="@dimen/activity_vertical_margin"
+                android:gravity="center_vertical"
+                android:padding="@dimen/eightDp"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/thirtyTwoDp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDp"
+                android:id="@+id/tvToDate"
+                android:background="@drawable/edittextunfocused"
+                android:text="@string/todate"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:drawableEnd="@drawable/calendar"
+                android:drawablePadding="@dimen/activity_vertical_margin"
+                android:gravity="center_vertical"
+                android:padding="@dimen/eightDp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvSpinnerTitle"
+            android:textSize="@dimen/twelveSp"
+
+            android:text="@string/Status"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/black"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDp"
+                android:spinnerMode="dialog"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/fourDp"
+                android:background="@drawable/spinnerlookalike"
+
+                android:id="@+id/spStatusDisplay"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinnerdownicon"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/twentyEightDp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:text="@string/apply"
+        android:gravity="center"
+        android:background="@color/Sign"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eightenSp"
+
+        android:id="@+id/tvFilterApply"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

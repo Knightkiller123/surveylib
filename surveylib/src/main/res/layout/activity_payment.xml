@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlPaymentsContainers"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/payments"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eightenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/eightDp"
+            android:id="@+id/ivPaymentBack"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/sixtyDp"
+        android:background="@color/grey"
+        android:id="@+id/rvPayments"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlNoPayments"
+        android:visibility="gone"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/nopayments"
+            android:id="@+id/ivPay"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivPay"
+            android:gravity="center"
+            android:textSize="@dimen/twentySp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/nopayments"/>
+    </RelativeLayout>
+    </RelativeLayout>

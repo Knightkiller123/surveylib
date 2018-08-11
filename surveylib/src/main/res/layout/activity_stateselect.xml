@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusable="true"
+    android:background="@color/back"
+    android:focusableInTouchMode="true"
+    android:id="@+id/rlStateSelect"
+    android:clickable="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/notifycolor"
+        android:layout_height="@dimen/sixtyDp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:id="@+id/ivDistBack"
+            android:visibility="invisible"
+            android:padding="@dimen/fourDp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/selectState"
+            android:id="@+id/tvSelectText"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"
+            />
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<AutoCompleteTextView
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+android:singleLine="true"
+    android:textSize="@dimen/sixteenSp"
+    android:hint="@string/searchDistrict"
+   android:drawableStart="@drawable/search"
+    android:padding="@dimen/eightDp"
+    android:drawablePadding="@dimen/activity_vertical_margin"
+    android:id="@+id/actvDist"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:background="@color/white"
+    />
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyDp"
+        android:visibility="gone"
+        android:id="@+id/rlStateImg">
+    <ImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ivState"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/twentyTwoSp"
+            android:textColor="@color/black"
+            android:id="@+id/tvState"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/ivState"
+            android:gravity="center_vertical"/>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:focusable="true"
+
+        android:id="@+id/rlStates"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:focusable="true"
+        android:layout_margin="@dimen/activity_vertical_margin"
+
+        android:id="@+id/rlDist"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlNoGeography"
+        android:visibility="gone"
+
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivSCh"
+            android:layout_marginTop="@dimen/thirtyTwoDp"
+            app:srcCompat="@drawable/no_data"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSCh"
+            android:layout_centerHorizontal="true"
+            android:text="@string/noResult"
+            android:id="@+id/ivNosch"
+            android:textSize="@dimen/fourteenSp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

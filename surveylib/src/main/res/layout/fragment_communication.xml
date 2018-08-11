@@ -1,0 +1,879 @@
+<ScrollView android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:scrollbars="none"
+    android:id="@+id/sVComScroll"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rlCom"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_marginTop="@dimen/twentyDp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="@dimen/eightDp"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvCommAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/commaddress"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvCommAddress"
+            android:layout_below="@+id/tvCommAddress"
+            app:cardElevation="@dimen/fourDp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/fourDp"
+            android:layout_margin="@dimen/eightDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/eightDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/firstName"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fathersname"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fourteenSp"
+                            android:id="@+id/etFirstMeet"
+                            android:nextFocusDown="@+id/etLastMeet"
+                            android:background="@drawable/edittextunfocused"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivNameErase"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:background="@drawable/edittextunfocused"
+                            android:textSize="@dimen/fourteenSp"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etLastMeet"
+                            android:nextFocusDown="@+id/etContactMeet"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivCareOfErase"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactno"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etContactMeet"
+                        android:nextFocusDown="@+id/etStreet1Meet"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivPhnErase"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street1"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etStreet1Meet"
+                        android:nextFocusDown="@+id/etStreet2Meet"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivAddDet1Erase"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Street2"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:nextFocusDown="@+id/etCityMeet"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etStreet2Meet"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivAdd2Erase"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:spinnerMode="dialog"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                        android:layout_marginEnd="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:background="@drawable/spinnerlookalike"
+                        android:id="@+id/SpStateBill" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/spinnerdownicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/twentyEightDp"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/district"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:spinnerMode="dialog"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                        android:layout_marginEnd="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:background="@drawable/spinnerlookalike"
+                        android:id="@+id/spDistBill" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/spinnerdownicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/twentyEightDp"/>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zip"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etCityMeet"
+                            android:textSize="@dimen/fourteenSp"
+                            android:nextFocusDown="@+id/etZipMeet"
+                            android:background="@drawable/edittextunfocused"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivCityDetErase"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:background="@drawable/edittextunfocused"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etZipMeet"
+                            android:textSize="@dimen/fourteenSp"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivZipDetErase"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat_semibold"
+            android:padding="@dimen/eightDp"
+            android:layout_marginTop="@dimen/twentyDp"
+            android:id="@+id/tvBillAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteenSp"
+            android:text="@string/billing"
+            android:layout_below="@+id/cvCommAddress"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:checked="true"
+            android:textColor="@color/black"
+            android:layout_below="@+id/tvBillAddress"
+            android:id="@+id/cbSame"
+            android:textSize="@dimen/twelveSp"
+            android:layout_marginTop="@dimen/eightDp"
+            android:text="@string/sameasbilling"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cvBillAddress"
+            android:layout_below="@+id/cbSame"
+            app:cardElevation="@dimen/fourDp"
+            android:visibility="gone"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/fourDp"
+            android:layout_margin="@dimen/eightDp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginBottom="@dimen/eightDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/firstName"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fathersname"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/fourteenSp"
+                            android:id="@+id/etBillFirstMeet"
+                            android:nextFocusDown="@+id/etLastMeet"
+                            android:background="@drawable/edittextunfocused"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivBillNameErase"
+                            />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:background="@drawable/edittextunfocused"
+                            android:textSize="@dimen/fourteenSp"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etBillLastMeet"
+                            android:nextFocusDown="@+id/etContactMeet"
+                            android:layout_weight="1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivBillCareOfErase"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contactno"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etBillContactMeet"
+                        android:nextFocusDown="@+id/etStreet1Meet"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivBillPhnErase"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/street1"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etBillStreet1Meet"
+                        android:nextFocusDown="@+id/etStreet2Meet"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivBillAddDet1Erase"
+                        />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Street2"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:layout_height="@dimen/fortyDp"
+                    android:layout_marginTop="@dimen/fourDp"
+
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+                        android:paddingLeft="@dimen/eightDp"
+                        android:nextFocusDown="@+id/etCityMeet"
+                        android:singleLine="true"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/etBillStreet2Meet"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        app:srcCompat="@drawable/round_cross_01"
+                        android:padding="@dimen/fourDp"
+                        android:visibility="gone"
+                        android:id="@+id/ivBillAdd2Erase"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/state"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:spinnerMode="dialog"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                        android:layout_marginEnd="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:background="@drawable/spinnerlookalike"
+                        android:id="@+id/SpBillStateBill" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/spinnerdownicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/twentyEightDp"/>
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/district"
+                    android:alpha="0.6"
+                    android:textSize="@dimen/tenSp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginStart="@dimen/activity_vertical_margin"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:spinnerMode="dialog"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                        android:layout_marginEnd="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:background="@drawable/spinnerlookalike"
+                        android:id="@+id/spBillDistBill" />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/spinnerdownicon"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/twentyEightDp"/>
+                </RelativeLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/city"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zip"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="2">
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etBillCityMeet"
+                            android:textSize="@dimen/fourteenSp"
+                            android:nextFocusDown="@+id/etZipMeet"
+                            android:background="@drawable/edittextunfocused"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivBillCityDetErase"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="@dimen/zeroDp"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/eightDp"
+                        android:layout_weight="1">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:background="@drawable/edittextunfocused"
+                            android:paddingLeft="@dimen/eightDp"
+                            android:singleLine="true"
+                            android:id="@+id/etBillZipMeet"
+                            android:textSize="@dimen/fourteenSp"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivBillZipDetErase"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

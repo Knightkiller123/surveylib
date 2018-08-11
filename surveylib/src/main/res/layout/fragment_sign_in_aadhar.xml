@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/back"
+    android:clickable="true"
+    android:id="@+id/rlAadhaarSignIn"
+
+    android:layout_width="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/llIntro"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:text="@string/signup"
+            android:gravity="center"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivAadharBack"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eightDp"
+        android:text="@string/enteraadhaar"
+        android:gravity="center"
+        android:id="@+id/tvHint"
+        android:layout_below="@+id/llIntro"
+        android:textSize="@dimen/sixteenSp"
+
+        android:layout_marginTop="@dimen/thirtyTwoDp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eightDp"
+        android:text="@string/alreadyexist"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textColor="@color/magma"
+        android:id="@+id/tvExistaadhaar"
+        android:textSize="@dimen/sixteenSp"
+        android:layout_below="@+id/tvHint"
+        android:layout_marginTop="@dimen/thirtyTwoDp"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/sixtyDp"
+            android:layout_below="@+id/tvHint"
+            android:layout_marginLeft="@dimen/thirtyTwoDp"
+            android:layout_marginRight="@dimen/thirtyTwoDp"
+            android:hint="@string/aadhaarno"
+            android:id="@+id/tilAadhar"
+
+            android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etAadharNo"
+                android:focusable="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="12"
+                android:textSize="@dimen/fourteenSp"
+
+
+                />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/box"
+        android:paddingTop="@dimen/twelveDp"
+        android:layout_marginLeft="@dimen/fortyDp"
+        android:layout_marginRight="@dimen/fortyDp"
+        android:paddingBottom="@dimen/twelveDp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvNextAadhar"
+        android:textSize="@dimen/twentySp"
+        android:layout_above="@+id/rlBot"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rlBot"
+
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eightyDp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvAnchor"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/eightDp"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:text="@string/staticagree"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/tvAnchor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourDp"
+
+            android:id="@+id/tvTncEasy"
+            android:textStyle="bold"
+            android:textSize="@dimen/twelveSp"
+
+            android:paddingStart="@dimen/fourDp"
+            android:paddingTop="@dimen/fourDp"
+            android:paddingBottom="@dimen/fourDp"
+            android:textColor="@color/forgot"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/twoDp"
+
+            android:text="@string/tnc"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAnd"
+            android:textStyle="bold"
+            android:textSize="@dimen/twelveSp"
+            android:padding="@dimen/twoDp"
+
+
+            android:layout_marginTop="@dimen/twoDp"
+            android:layout_toRightOf="@+id/tvTncEasy"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/and"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPrivacyEasy"
+            android:textStyle="bold"
+
+            android:paddingTop="@dimen/fourDp"
+            android:paddingBottom="@dimen/fourDp"
+            android:paddingRight="@dimen/fourDp"
+            android:layout_marginLeft="@dimen/twoDp"
+            android:textSize="@dimen/twelveSp"
+            android:textColor="@color/forgot"
+            android:layout_toRightOf="@+id/tvAnd"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/privacy"/>
+            </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+       android:id="@+id/rlWebviewContainer"/>
+</RelativeLayout>

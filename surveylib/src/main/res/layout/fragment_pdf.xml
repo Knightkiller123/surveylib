@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor"
+        android:id="@+id/rlVer">
+        <TextView
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:text="PDF"
+            android:id="@+id/tvTitlse"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivVerifyOtpBack"/>
+    </RelativeLayout>
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_below="@+id/rlVer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <ImageView
+        android:layout_below="@+id/rlVer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/iVData"
+        />
+</RelativeLayout>

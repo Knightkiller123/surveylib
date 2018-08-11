@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlAttachment">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="64dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/rvDocuments"></android.support.v7.widget.RecyclerView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/buttoncolor"
+        android:text="@string/next"
+        android:gravity="center"
+        android:id="@+id/tvFragNext"
+
+        android:clickable="false"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

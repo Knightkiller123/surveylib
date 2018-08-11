@@ -1,0 +1,15 @@
+<CheckedTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:id="@+id/tvTexte"
+    android:singleLine="true"
+    android:textSize="@dimen/fourteenSp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white"
+    android:paddingStart="@dimen/twentyTwoDp"
+    android:paddingTop="@dimen/sixteenDp"
+    android:paddingBottom="@dimen/sixteenDp"
+    android:paddingEnd="@dimen/twentyTwoDp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"/>

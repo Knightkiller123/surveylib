@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/buttoncolor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/toolbarcolor</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:colorControlNormal">@color/Sign</item>
+
+    </style>
+
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18dp</item>
+
+
+    </style>
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.Dialog">
+                        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+
+                    
+    </style>
+
+    <style name = "MyDialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+    </style >
+
+
+    <style name="TextViewProfile">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginBottom">1px</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sixteenSp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/sixteenDp</item>
+        <item name="android:padding">@dimen/sixteenDp</item>
+    </style>
+
+
+    <style name="TextHeaderProfile">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textSize">@dimen/twelveSp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/twentyDp</item>
+
+    </style>
+
+    <style name="EditTextProfile">
+
+        <item name="android:textColorHint">@color/unselectedText</item>
+        <item name="android:enabled">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/fourteenSp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/fourDp</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+    <style name="ViewHeader">
+        <item name="android:layout_height">@dimen/oneDp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/eightDp</item>
+        <item name="android:background">@color/lineColor</item>
+
+    </style>
+
+    <style name="TabTextStyle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/sixteenSp</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+
+    </style>
+
+
+
+</resources>

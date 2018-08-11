@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="@dimen/eightyDp">
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:buttonTint="@color/colorAccent"
+        android:layout_alignParentStart="true"
+        android:id="@+id/cbBenType"
+        android:textSize="@dimen/fourteenSp"
+        android:layout_marginStart="@dimen/eightDp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cbBenType"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/eightDp"
+        android:id="@+id/tvBenificType"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/eightDp"
+        android:id="@+id/ivBenInfo"
+        android:layout_marginEnd="@dimen/eightDp"
+        app:srcCompat="@drawable/help_01"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/oneDp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/grey"/>
+</RelativeLayout>

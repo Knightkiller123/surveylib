@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:background="@color/black"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlSdk"
+        android:elevation="4dp"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_centerInParent="true"
+            android:text="@string/scanqr"
+            android:id="@+id/tvSdk"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:id="@+id/ivQrBack"
+            android:padding="@dimen/fourDp"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:gravity="center"
+        android:layout_below="@+id/rlSdk"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+
+        >
+
+        <SurfaceView
+            android:id="@+id/camera_view"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            android:layout_above="@+id/info"
+            />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/rlScanOverlay"
+    android:layout_height="320dp">
+        <easygov.saral.harlabh.utils.barcodeutils.ScannerOverlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#44000000"
+            app:line_color="@color/buttoncolor"
+            app:line_speed="6"
+            app:line_width="4"
+            app:square_height="200"
+            app:square_width="200"/>
+</RelativeLayout>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+
+            android:text="@string/scanAadhaar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/fourteenSp"
+            />
+        <TextView
+            android:id="@+id/code_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/twentyFourDp"
+            android:padding="10dp"
+            android:layout_below="@+id/rlScanOverlay"
+            android:text="@string/intro_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"
+            />
+
+        <LinearLayout
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/buttoncolor"
+                android:textSize="@dimen/sixteenSp"
+                android:id="@+id/tvNoScan"
+               android:padding="@dimen/fourDp"
+                android:text="@string/troubleqr"
+                android:gravity="center"/>
+            <Button
+                android:id="@+id/btn_start_stop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="Stop"
+                />
+
+
+            <Button
+                android:id="@+id/btn_restart_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:text="Refresh"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

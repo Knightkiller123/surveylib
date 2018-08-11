@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/popup_element"
+
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.6"></RelativeLayout>
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/thirtyTwoDp"
+        android:layout_marginRight="@dimen/thirtyTwoDp"
+        android:layout_marginTop="@dimen/eightyDp"
+        android:layout_marginBottom="@dimen/oneTwentyDp"
+    android:clickable="true"
+    android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivWhyImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/eightDp"
+            />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvInfoMethod"
+        android:textColor="@color/buttoncolor"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/ivWhyImg"
+        android:textStyle="bold"
+
+        android:textSize="@dimen/twentySp"
+        android:text="example"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvInfoMethod"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteenSp"
+        android:id="@+id/tvMethodDesc"
+        android:padding="@dimen/activity_vertical_margin"
+        android:text="fecddsvcdavdsvcdscacasccsacsa
+cdaccascsacacsacsa
+cascsacscsacascccsa"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gotit"
+        android:background="@color/buttoncolor"
+        android:textColor="@color/white"
+        android:id="@+id/tvGot"
+        android:paddingLeft="@dimen/fortyDp"
+        android:paddingRight="@dimen/fortyDp"
+        android:textSize="@dimen/fourteenSp"
+        android:paddingTop="@dimen/eightDp"
+        android:paddingBottom="@dimen/eightDp"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+</RelativeLayout>
+    </RelativeLayout>

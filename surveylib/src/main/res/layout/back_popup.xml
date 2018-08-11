@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlBackPopup"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:alpha="0.6"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/thirtyTwoDp"
+        android:layout_marginRight="@dimen/thirtyTwoDp"
+        android:layout_marginTop="@dimen/oneTwentyDp"
+        android:layout_marginBottom="@dimen/oneTwentyDp"
+        android:clickable="true"
+        android:background="@color/white">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivWhyImg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/eightDp"
+            app:srcCompat="@drawable/alert"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInfoMethod"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_below="@+id/ivWhyImg"
+            android:textStyle="bold"
+
+            android:textSize="@dimen/twentySp"
+            android:text="@string/alert"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvInfoMethod"
+            android:id="@+id/tvMethodDesc"
+            android:gravity="center"
+            android:textSize="@dimen/fourteenSp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="@string/navigateaway"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixtyDp"
+                android:weightSum="2"
+                android:background="@color/buttoncolor"
+
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="@string/yesiwnt"
+                android:textColor="@color/white"
+                android:id="@+id/tvnavigateYes"
+                android:textStyle="bold"
+                android:alpha="0.8"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/fourteenSp"
+                />
+                <TextView
+                    android:layout_width="@dimen/zeroDp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="@string/notnow"
+                    android:textColor="@color/white"
+
+                    android:id="@+id/tvnavigateCancel"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fourteenSp"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

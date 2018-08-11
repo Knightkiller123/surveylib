@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/fourDp"
+    android:layout_margin="@dimen/eightDp"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/rlSelectCategory"
+
+
+
+        android:orientation="vertical" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fortyDp"
+            android:background="@color/green"
+            android:id="@+id/tvLevel"
+            android:textSize="@dimen/fourteenSp"
+            android:text="@string/ServiceLevel"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLevel"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/eightenSp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/tvSchemeName"/>
+        <View
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneDp"
+            android:id="@+id/vSeps"
+            android:layout_below="@+id/tvSchemeName"
+            android:background="@color/buttoncolor"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:layout_marginRight="@dimen/eightDp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/twelveSp"
+            android:layout_marginRight="@dimen/eightDp"
+            android:layout_below="@+id/vSeps"
+            android:id="@+id/tvDepartmentName"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDepartmentName"
+            android:id="@+id/tvDescSchemeHead"
+            android:maxLines="3"
+            android:textStyle="bold"
+            android:textSize="@dimen/fourteenSp"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/twoDp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescSchemeHead"
+            android:id="@+id/tvDescScheme"
+            android:textSize="@dimen/fourteenSp"
+            android:maxLines="3"
+            android:layout_marginStart="@dimen/activity_vertical_margin"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/fourDp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDescScheme"
+            android:id="@+id/tvSchemeKnowMore"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/knowmore"
+            android:visibility="gone"
+            android:padding="@dimen/fourDp"
+            android:textStyle="bold"
+            android:textColor="#57c48e"
+
+            android:textSize="@dimen/fourteenSp"
+            android:layout_margin="@dimen/activity_vertical_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#eceaf1"
+            android:layout_below="@+id/tvSchemeKnowMore"
+            android:id="@+id/llFee"
+            android:weightSum="2">
+            <TextView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_height="@dimen/fortyDp"
+                android:gravity="center"
+                android:id="@+id/tvPrice"
+                android:visibility="gone"
+                android:textSize="@dimen/fourteenSp"
+                android:background="@drawable/pricebox"
+                android:textColor="@color/black"
+                android:layout_weight="0"/>
+            <TextView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_height="@dimen/fortyDp"
+                android:id="@+id/tvCheckEligibility"
+                android:textSize="@dimen/fourteenSp"
+                android:gravity="center"
+                android:background="@color/buttoncolor"
+                android:textColor="@color/white"
+                android:text="@string/checkeligible"
+                android:layout_weight="2"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

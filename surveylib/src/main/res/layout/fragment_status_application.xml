@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    android:clickable="true"
+    android:id="@+id/rlStatusFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/applicationstatus"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eightenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/eightDp"
+            android:id="@+id/ivApplicationStatusBack"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/oneHundredDp"
+        android:id="@+id/tvStatusFilter"
+        android:padding="@dimen/eightDp"
+        android:textSize="@dimen/fourteenSp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:drawablePadding="@dimen/eightDp"
+        android:drawableEnd="@drawable/downarrow"
+        android:textColor="@color/black"
+        android:text="@string/lifetime"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thirtyTwoDp"
+        android:textSize="@dimen/fourteenSp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvStatusTime"
+        android:layout_below="@+id/tvStatusFilter"
+android:visibility="gone"
+
+        android:textColor="@color/black"
+        android:text="Today"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvStatusTime"
+        android:background="@color/white"
+        android:paddingStart="@dimen/activity_vertical_margin"
+        android:paddingEnd="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eightDp"
+        android:id="@+id/rvAppStatus"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:layout_below="@+id/tvStatusTime"
+        android:background="@color/grey"/>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:id="@+id/rlBenifitContainer"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlBenif"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/beneficiarytype"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:id="@+id/ivAdditionalBack"
+            android:layout_marginStart="@dimen/eightDp"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/eightDp"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlBenif"
+        android:id="@+id/tvBenDesc"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:textSize="@dimen/fourteenSp"
+        android:text="@string/plbenfittype"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvBenDesc"
+        android:id="@+id/rvBenificiaryList"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:text="@string/next"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/buttoncolor"
+        android:id="@+id/tvBeneficiaryNext"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/eightenSp"
+        />
+</RelativeLayout>

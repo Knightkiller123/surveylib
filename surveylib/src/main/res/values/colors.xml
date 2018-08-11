@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#3285BD</color>
+    <color name="colorPrimaryDark">#D36E2A</color>
+    <color name="colorAccent">#EE8033</color>
+    <color name="colorBlue">#303F9F</color>
+
+
+    <color name="white">#fff</color>
+    <color name="whiteshade">#25bababa</color>
+    <color name="black">#333333</color>
+    <color name="Sign">#3285BD</color>
+    <color name="forgot">#3285BD</color>
+    <color name="red">#ef1515</color>
+    <color name="grey">#F2F2F2</color>
+    <color name="darkgrey">#999999</color>
+    <color name="green">#49bf84</color>
+    <color name="back">#F2F2F2</color>
+    <color name="magma">#f44437</color>
+    <color name="magmalight">#56f44437</color>
+    <color name="optionColor">#808080</color>
+    <color name="lineColor">#999999</color>
+    <color name="unselectedText">#b3b3b3</color>
+    <color name="primaryColor">#D36E2A</color>
+
+    <color name="buttoncolor">#3285BD</color>
+    <color name="toolbarcolor">#EE8033</color>
+    <color name="notifycolor">#EE8033</color>
+
+    <color name="CardUnselected">#f2f2f2</color>
+    <color name="pink">#e2b1b0</color>
+    <color name="pngColor">#FF427FDB</color>
+    <color name="fdsv">#99000000</color>
+    <color name="colorAttachmentUnSelectText">#FF727377</color>
+</resources>

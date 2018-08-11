@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <easygov.saral.harlabh.utils.CustomViewPager
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/vpApplication">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabTextColor="@color/black"
+                    android:clickable="false"
+                    app:tabTextAppearance="@style/MyCustomTextAppearance"
+                    android:minHeight="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:tabMode="scrollable"
+                    app:tabSelectedTextColor="@color/buttoncolor"
+                    app:tabIndicatorHeight="2dp"
+                    app:tabBackground="@drawable/customtab_indicator"
+                    />
+
+            </easygov.saral.harlabh.utils.CustomViewPager>
+        </RelativeLayout>
+
+</RelativeLayout>

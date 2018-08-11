@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlAdditionalContainer"
+    android:background="@color/white"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlFormApp"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/additionalinfo"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:id="@+id/ivAdditionalBack"
+            android:layout_marginStart="@dimen/eightDp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/eightDp"
+            android:padding="@dimen/eightDp"/>
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:id="@+id/llScrollAdditional"
+        android:layout_below="@+id/rlFormApp"
+        android:layout_marginBottom="@dimen/sixtyDp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/llStaticForm">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/eightDp"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/aadhaarno"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/eightDp"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:id="@+id/tvHeadAdditional"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginEnd="@dimen/activity_vertical_margin"
+                        android:layout_height="@dimen/fortyDp"
+                        android:layout_marginTop="@dimen/eightDp"
+
+                        >
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittextunfocused"
+
+                            android:textSize="@dimen/fourteenSp"
+                            android:padding="@dimen/eightDp"
+
+                            android:id="@+id/etAadhaarAdditional"
+
+                            android:singleLine="true"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/round_cross_01"
+                            android:padding="@dimen/fourDp"
+                            android:visibility="gone"
+                            android:id="@+id/ivAadhaarAdditional"
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/eightDp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/state"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/eightDp"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike"
+
+                            android:id="@+id/spStateAdditional"></Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/twentyEightDp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/eightDp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/district"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/eightDp"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike"
+
+                            android:id="@+id/spDistrictAdditional"></Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/twentyEightDp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:id="@+id/llIssuer"
+                    android:layout_marginBottom="@dimen/eightDp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/authoritytype"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/eightDp"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike"
+
+                            android:id="@+id/spIssuer"></Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/twentyEightDp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:id="@+id/llAuthType"
+                    android:layout_marginBottom="@dimen/eightDp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/issuer"
+                        android:layout_marginStart="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="@dimen/eightDp"
+                        android:alpha="0.6"
+                        android:textSize="@dimen/tenSp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rlIssuer">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:layout_marginStart="@dimen/activity_vertical_margin"
+
+                            android:layout_marginEnd="@dimen/activity_vertical_margin"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike"
+
+                            android:id="@+id/spSpinAuthType"></Spinner>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/twentyEightDp"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:text="@string/done"
+        android:gravity="center"
+        android:id="@+id/tvDoneAdditional"
+        android:background="@color/buttoncolor"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/twentySp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlAddLayer"
+        android:background="@color/white"></RelativeLayout>
+</RelativeLayout>

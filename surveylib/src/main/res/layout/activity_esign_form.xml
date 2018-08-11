@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:id="@+id/llEsignForm"
+    android:focusableInTouchMode="true"
+    android:weightSum="100"
+   >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/zeroDp"
+    android:background="@color/notifycolor"
+    android:layout_weight="9">
+   <ImageView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:srcCompat="@drawable/ic_back"
+       android:layout_centerVertical="true"
+       android:padding="@dimen/eightDp"
+       android:id="@+id/ivEsignBack"/>
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:textSize="@dimen/eightenSp"
+       android:textColor="@color/white"
+       android:text="@string/confirmapplication"/>
+</RelativeLayout>
+   <android.support.v7.widget.RecyclerView
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/zeroDp"
+       android:layout_weight="72"
+       android:id="@+id/rvEsignForm"
+       ></android.support.v7.widget.RecyclerView>
+
+   <CheckBox
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/zeroDp"
+       android:layout_weight="10"
+       android:paddingLeft="@dimen/eightDp"
+       android:textSize="@dimen/fourteenSp"
+       android:textColor="@color/green"
+       android:id="@+id/cbCheck"
+       android:text="@string/checkToEsign"
+       android:layout_below="@+id/rvEsignForm"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/zeroDp"
+    android:layout_weight="9"
+    android:layout_alignParentBottom="true"
+    android:background="@color/buttoncolor"
+    android:textColor="@color/white"
+    android:gravity="center"
+    android:textSize="@dimen/twentySp"
+    android:text="@string/next"
+    android:id="@+id/tvNextEsign"/>
+</LinearLayout>

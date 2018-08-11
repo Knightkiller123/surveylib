@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/whiteshade"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/eightenSp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:padding="@dimen/sixteenDp"
+            android:background="@color/colorAccent" />
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/twelveDp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"/>
+
+        <TextView
+            android:id="@+id/tvNextForm"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="@string/saves"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="@string/edit"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
+                android:layout_margin="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/twentyDp"
+                    android:paddingStart="@dimen/sixteenDp"
+                    android:paddingEnd="@dimen/sixteenDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/full_name"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        android:id="@+id/etNameDet"
+                        style="@style/EditTextProfile"
+                        android:hint="@string/full_name"
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/eightDp"
+
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvCareOf"
+                            style="@style/TextHeaderProfile"
+                            android:text="@string/careof"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="3"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="@dimen/zeroDp"
+                                android:layout_height="@dimen/fortyDp"
+                                android:layout_weight="1.1"
+                                android:layout_marginBottom="@dimen/twoDp"
+                                android:background="@drawable/edittextunfocused"
+                                android:layout_marginTop="@dimen/eightDp"
+                                >
+
+                                <Spinner
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:spinnerMode="dropdown"
+                                    android:id="@+id/spCareOf" />
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="@dimen/zeroDp"
+                                android:layout_height="@dimen/fortyDp"
+                                android:layout_weight="1.9"
+                                android:layout_marginTop="@dimen/eightDp"
+                                >
+                                <EditText
+                                    android:hint="@string/careof"
+                                    android:textColorHint="@color/unselectedText"
+                                    android:enabled="false"
+                                    android:layout_width="match_parent"
+                                    android:textAlignment="viewStart"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_height="match_parent"
+                                    android:textSize="@dimen/fourteenSp"
+                                    android:background="@drawable/edittextunfocused"
+                                    android:id="@+id/etLastNameDet"
+                                    android:padding="@dimen/eightDp"
+                                    android:singleLine="true"
+                                    />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView
+                        android:text="@string/contactno"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        android:id="@+id/etPhnDet"
+                        style="@style/EditTextProfile"
+                        android:hint="0000000000"
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+                    <TextView
+                        android:text="@string/email"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        android:hint="abc@gmail.com"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/etEmailDet"
+                        style="@style/EditTextProfile"
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="@dimen/sixteenDp"
+                android:layout_marginStart="@dimen/sixteenDp"
+                android:layout_marginEnd="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/twentyDp"
+                    android:paddingStart="@dimen/sixteenDp"
+                    android:paddingEnd="@dimen/sixteenDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/dob"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/fortyDp"
+                        android:background="@drawable/edittextunfocused"
+                        android:padding="@dimen/eightDp"
+                        android:drawableEnd="@drawable/calendar"
+                        android:textSize="@dimen/fourteenSp"
+                        android:id="@+id/tvDobStatic"
+                        android:layout_marginTop="@dimen/eightDp"/>
+
+
+                    <TextView
+                        android:text="@string/gender"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_height="@dimen/fortyDp">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/spSpinNoAadhaar"
+                            android:spinnerMode="dialog"
+                            android:background="@drawable/spinnerlookalike"
+                            />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/eightDp"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_marginBottom="@dimen/sixteenDp"
+                android:layout_marginStart="@dimen/sixteenDp"
+                android:layout_marginEnd="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/twentyDp"
+                    android:paddingStart="@dimen/sixteenDp"
+                    android:paddingEnd="@dimen/sixteenDp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="@string/house"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        android:id="@+id/etAddDet1"
+                        style="@style/EditTextProfile"
+                        android:hint="Ex : House no 234"
+
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+                    <TextView
+                        android:text="@string/locality"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        style="@style/EditTextProfile"
+                        android:id="@+id/etLocality"
+                        android:hint="@string/locality"
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+
+                    <TextView
+                        android:text="@string/state"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike"
+                            android:id="@+id/SpStateBillForm"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/eightDp"/>
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:text="@string/district"
+                        style="@style/TextHeaderProfile"
+                        />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <Spinner
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/fortyDp"
+                            android:spinnerMode="dialog"
+                            android:id="@+id/spDistBillForm"
+                            android:layout_marginTop="@dimen/fourDp"
+                            android:background="@drawable/spinnerlookalike" />
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/spinnerdownicon"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/eightDp"/>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:text="@string/zip"
+                        style="@style/TextHeaderProfile"
+                        />
+
+                    <EditText
+                        style="@style/EditTextProfile"
+                        android:hint="000000"
+                        android:maxLength="6"
+                        android:inputType="number"
+                        android:id="@+id/etZipDet"
+
+                        />
+
+                    <View
+                        style="@style/ViewHeader"
+                        />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

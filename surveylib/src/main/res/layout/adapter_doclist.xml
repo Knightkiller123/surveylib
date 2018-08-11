@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fortyDp"
+    android:layout_margin="@dimen/fourDp"
+    android:textSize="@dimen/sixteenSp"
+    android:textColor="@color/black"
+    android:id="@+id/tvDocMainItem"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:layout_marginBottom="@dimen/twoDp"
+        android:background="@color/grey"></View>
+</LinearLayout>

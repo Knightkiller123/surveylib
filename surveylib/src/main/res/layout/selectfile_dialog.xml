@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rlFileSelect"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:id="@+id/rlDocClose"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/oneTwentyDp"
+        android:layout_marginBottom="@dimen/oneSixtyDp"
+        android:layout_marginLeft="@dimen/twentyFourDp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="4.2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="@dimen/twentyFourDp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeroDp"
+            android:layout_weight="1.0"
+            android:text="@string/attachfile"
+            android:gravity="center"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeroDp"
+            android:layout_weight="1.0"
+            android:text="@string/opencamera"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:id="@+id/tvCamera"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteenSp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeroDp"
+            android:layout_weight="1.0"
+            android:text="@string/choosegallery"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:id="@+id/tvDocSelection"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteenSp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zeroDp"
+            android:layout_weight="1.0"
+            android:id="@+id/tvSaralLibrary"
+            android:text="@string/easygovlibrary"
+            android:gravity="center"
+
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteenSp"/>
+
+        </LinearLayout>
+
+
+</RelativeLayout>

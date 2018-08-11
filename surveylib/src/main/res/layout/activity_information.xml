@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:id="@+id/llFourth"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:id="@+id/rlSelfecContainer"
+
+        android:layout_height="match_parent"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zeroDp"
+        android:layout_weight="8"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/application"
+            android:textSize="@dimen/twentySp"
+            android:textStyle="bold"
+            android:id="@+id/tvAppHeader"
+            android:textColor="@color/white"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/eightDp"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:id="@+id/ivAppBack"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_back"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zeroDp"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_weight="8">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="41"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/circle_done"/>
+        <ProgressBar
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+
+            android:progress="100"
+            android:max="100"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+        <ImageView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/circle_done"/>
+        <ProgressBar
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:layout_gravity="center"
+            android:progress="100"
+            android:max="100"
+            android:id="@+id/pbSet1"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+        <ImageView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/circle_done"/>
+        <ProgressBar
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:progress="100"
+            android:max="100"
+
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+        <ImageView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/selected_circle"/>
+        <ProgressBar
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+             android:id="@+id/pbSet3"
+            android:progress="0"
+            android:max="100"
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleHorizontal"
+            />
+        <ImageView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/circle_notreached"/>
+    </LinearLayout>
+</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zeroDp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="40"
+
+        android:background="@color/white"
+        android:layout_weight="5">
+
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:text="@string/yourstory"
+            android:textSize="@dimen/eightSp"
+            android:textColor="@color/buttoncolor"
+           android:gravity="center"
+            android:layout_weight="8"/>
+
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:text="@string/schemes"
+            android:textColor="@color/buttoncolor"
+            android:textSize="@dimen/eightSp"
+            android:gravity="center"
+            android:id="@+id/ivFourthScheme"
+            android:layout_weight="8"/>
+
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:text="@string/elegibility"
+            android:textSize="@dimen/eightSp"
+            android:gravity="center"
+            android:textColor="@color/buttoncolor"
+
+            android:layout_weight="8"/>
+
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:text="@string/application"
+            android:textSize="@dimen/eightSp"
+            android:gravity="center"
+            android:textColor="@color/buttoncolor"
+
+            android:layout_weight="8"/>
+
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="wrap_content"
+            android:text="@string/checkout"
+            android:textSize="@dimen/eightSp"
+            android:gravity="center"
+
+            android:layout_weight="8"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zeroDp"
+        android:id="@+id/rlApplication"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_weight="79"></RelativeLayout>
+
+</LinearLayout>

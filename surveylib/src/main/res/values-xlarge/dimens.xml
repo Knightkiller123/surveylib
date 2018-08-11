@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin">20dp</dimen>
+    <dimen name="fab_margin">20dp</dimen>
+    <dimen name="fourDp">8dp</dimen>
+    <dimen name="twoHundredDp">208dp</dimen>
+    <dimen name="twoDp">2dp</dimen>
+    <dimen name="eightDp">12dp</dimen>
+    <dimen name="thirtyTwoDp">36dp</dimen>
+    <dimen name="twentyDp">24dp</dimen>
+    <dimen name="twentyFourDp">28dp</dimen>
+    <dimen name="oneDp">1dp</dimen>
+    <dimen name="sixtyDp">60dp</dimen>
+    <dimen name="fortyDp">44dp</dimen>
+    <dimen name="oneEightyDp">184dp</dimen>
+    <dimen name="zeroDp">0dp</dimen>
+    <dimen name="twelveDp">16dp</dimen>
+    <dimen name="thirtyDp">34dp</dimen>
+    <dimen name="eightyDp">84dp</dimen>
+    <dimen name="oneTwentyDp">124dp</dimen>
+    <dimen name="thirtySixDp">40dp</dimen>
+    <dimen name="fortyEightDp">52dp</dimen>
+    <dimen name="oneHundredDp">104dp</dimen>
+    <dimen name="oneSixtyDp">164dp</dimen>
+    <dimen name="fiftyTwoDp">56dp</dimen>
+    <dimen name="oneFiftyFourDp">158dp</dimen>
+    <dimen name="twentyTwoDp">26dp</dimen>
+    <dimen name="eighteenDp">22dp</dimen>
+    <dimen name="fourteenDp">18dp</dimen>
+    <dimen name="twentyEightDp">32dp</dimen>
+    <dimen name="twoEightyDp">284dp</dimen>
+    <dimen name="sixtyFourDp">68dp</dimen>
+    <dimen name="sixtyEightDp">72dp</dimen>
+    <dimen name="sixDp">6dp</dimen>
+    <dimen name="sixteenDp">20dp</dimen>
+    <dimen name="oneEightyEightDp">192dp</dimen>
+
+
+    <dimen name="customsp">14dp</dimen>
+    <dimen name="tenDp">10dp</dimen>
+
+
+
+    <dimen name="sixteenSp">20dp</dimen>
+    <dimen name="eightSp">12dp</dimen>
+    <dimen name="twentyTwoSp">26dp</dimen>
+    <dimen name="twentySp">24dp</dimen>
+    <dimen name="tenSp">14dp</dimen>
+    <dimen name="twelveSp">16dp</dimen>
+    <dimen name="fourteenSp">18dp</dimen>
+    <dimen name="eightenSp">22dp</dimen>
+    <dimen name="design_bottom_navigation_text_size" tools:override="true">16dp</dimen>
+    <dimen name="design_bottom_navigation_active_text_size" tools:override="true">16dp</dimen>
+
+
+
+    <dimen name="sixEightyDp">680dp</dimen>
+
+
+
+</resources>

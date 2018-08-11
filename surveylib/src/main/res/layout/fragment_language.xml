@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    android:id="@+id/rlLangFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:id="@+id/rlLang"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/selectLanguage"
+            android:id="@+id/tvLangHeading"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eightenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:id="@+id/ivLangBack"
+            android:visibility="gone"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbLanguage"
+        android:layout_gravity="left"
+
+        android:layout_below="@+id/rlLang">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirtySixDp"
+            android:paddingLeft="@dimen/eightDp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/fourteenSp"
+
+            android:gravity="center_vertical"
+            android:id="@+id/rbEnglish"
+            android:text="@string/english"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/thirtySixDp"
+            android:paddingLeft="@dimen/eightDp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/fourteenSp"
+
+            android:gravity="center_vertical"
+            android:id="@+id/rbHindi"
+            android:text="@string/hindi"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/buttoncolor"
+        android:id="@+id/rlLanguageConti"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contin"
+            android:textSize="@dimen/eightenSp"
+            android:id="@+id/tvLangContinue"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            />
+        </RelativeLayout>
+
+</RelativeLayout>

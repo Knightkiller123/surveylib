@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/eightDp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNonListTitle"
+        android:textSize="@dimen/sixteenSp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/black"/>
+
+    <com.wefika.flowlayout.FlowLayout
+        android:layout_below="@+id/tvNonListTitle"
+        android:id="@+id/flLayout"
+        android:layout_marginTop="@dimen/fourDp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/sixteenDp"
+        android:layout_marginEnd="@dimen/sixteenDp"
+        android:layout_height="wrap_content"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:visibility="gone"
+        android:background="@color/lineColor"/>
+</RelativeLayout>

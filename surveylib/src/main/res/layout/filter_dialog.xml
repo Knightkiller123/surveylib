@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rlFileSelect"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:id="@+id/rlDocClose"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/oneTwentyDp"
+        android:layout_marginBottom="@dimen/oneTwentyDp"
+        android:layout_marginLeft="@dimen/twentyFourDp"
+        android:background="@color/white"
+        android:orientation="vertical"
+
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="@dimen/twentyFourDp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/sixtyDp"
+                android:text="@string/select_category"
+                android:gravity="center"
+                android:background="@color/notifycolor"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteenSp"/>
+
+            <ImageView
+                android:id="@+id/ivCross"
+                android:layout_marginEnd="@dimen/eightDp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/sixteenDp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cross"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/eightDp"
+            android:id="@+id/rvFilterSchemes"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rlWantSelect"
+    android:layout_height="match_parent"
+    android:background="@color/back">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:id="@+id/rlSelect"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/twentySp"
+            android:text="@string/iwant"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:padding="@dimen/eightDp"
+            app:srcCompat="@drawable/cross"
+            android:id="@+id/ivCrossSelect"/>
+    </RelativeLayout>
+
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/rlSelect"
+        android:layout_height="@dimen/fortyDp"
+
+        android:textSize="@dimen/fourteenSp"
+        android:id="@+id/actvSelect"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:hint="@string/schemeorservices"
+        android:visibility="gone"
+        android:transitionName="simple_activity_transition"
+        android:padding="@dimen/eightDp"
+        android:singleLine="true"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:background="@color/white"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rlEtSelect"
+    android:layout_below="@+id/rlSelect">
+    <EditText
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/fortyDp"
+        android:id="@+id/etSelect"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:hint="@string/schemeorservices"
+        android:transitionName="simple_activity_transition"
+        android:padding="@dimen/eightDp"
+        android:singleLine="true"
+        android:textSize="@dimen/fourteenSp"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:background="@color/white" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twentyFourDp"
+        android:layout_marginRight="@dimen/thirtyTwoDp"
+        android:padding="@dimen/fourDp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/ivSchemeCross"
+        android:visibility="gone"
+        app:srcCompat="@drawable/round_cross_01"/>
+</RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlEtSelect"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:text="@string/letgetStarted"
+        android:background="@color/white"
+        android:padding="@dimen/twelveDp"
+        android:textSize="@dimen/twelveSp"
+        android:gravity="center_vertical"
+        android:drawableEnd="@drawable/nextarrow"
+        android:textColor="@color/buttoncolor"
+        android:id="@+id/tvgetStarted"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvgetStarted"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:visibility="gone"
+        android:textSize="@dimen/fourteenSp"
+        android:background="@color/white"
+        android:padding="@dimen/twelveDp"
+        android:drawableEnd="@drawable/nextarrow"
+        android:textColor="@color/buttoncolor"
+        android:id="@+id/tvCatSelect"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:id="@+id/rvWatServices"
+        android:layout_marginTop="@dimen/fourDp"
+        android:background="@color/white"
+        android:padding="@dimen/eightDp"
+        android:layout_below="@+id/tvCatSelect"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rlNoData"
+        android:visibility="gone"
+        android:layout_below="@+id/tvCatSelect"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ivSCh"
+            android:layout_marginTop="@dimen/thirtyTwoDp"
+            app:srcCompat="@drawable/no_data"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSCh"
+            android:layout_centerHorizontal="true"
+            android:text="@string/noResult"
+            android:id="@+id/ivNosch"
+            android:textSize="@dimen/fourteenSp"
+            android:paddingLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/rlDocSelect"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:id="@+id/rlDocSelectorClose"
+        android:background="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/oneHundredDp"
+        android:layout_marginBottom="@dimen/eightyDp"
+        android:layout_marginLeft="@dimen/twentyFourDp"
+        android:background="@color/white"
+        android:layout_marginRight="@dimen/twentyFourDp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fortyDp"
+            android:text="@string/documenttype"
+            android:gravity="center"
+            android:id="@+id/tvDocHeading"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"/>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvDocHeading"
+            android:layout_margin="@dimen/fourDp"
+            android:id="@+id/rlDocList"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

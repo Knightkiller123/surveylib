@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/grey"
+    android:clickable="true"
+    tools:context="easygov.saral.harlabh.fragments.managementfragments.SearchApplicationResultFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/searchresult"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eightenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:id="@+id/ivSearchResultBack"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/sixtyDp"
+        android:id="@+id/rvSearchResult"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_weight="0.8"
+        android:layout_width="match_parent"
+        android:id="@+id/rlHomeNew"
+        android:background="@color/notifycolor"
+        android:layout_height="230dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:id="@+id/rlTops">
+            <ImageView
+                android:layout_width="@dimen/oneHundredDp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/harwhite"
+                android:padding="@dimen/fourDp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twentySp"/>
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneDp"
+            android:layout_below="@+id/rlTops"
+            android:id="@+id/vTop"
+            android:background="@color/colorPrimaryDark"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/vTop"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.3"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/harstartlogo"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:layout_marginTop="@dimen/sixtyDp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Selected"
+                android:drawablePadding="@dimen/eightDp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sixteenSp"
+                android:layout_marginEnd="@dimen/eightDp"
+                android:layout_marginLeft="@dimen/eightDp"
+                android:drawableRight="@drawable/down_arrow"
+                android:id="@+id/tvSelectedTerritory"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDp"
+                android:layout_marginTop="@dimen/fortyDp"
+                android:singleLine="true"
+                android:transitionName="simple_activity_transition"
+                android:layout_below="@+id/tvSelectedTerritory"
+                android:text="@string/empowering"
+                android:id="@+id/tvEmpowering"
+                android:textSize="@dimen/fourteenSp"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyEightDp"
+                android:layout_below="@+id/tvEmpowering"
+                android:padding="@dimen/eightDp"
+                android:id="@+id/cvWant"
+                android:gravity="center_vertical"
+                android:background="@color/white"
+                app:cardCornerRadius="@dimen/fourDp"
+                android:layout_marginTop="@dimen/thirtyTwoDp"
+                android:layout_marginStart="@dimen/twelveDp"
+                android:layout_marginEnd="@dimen/twelveDp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortyEightDp"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="@dimen/eightDp"
+                    android:singleLine="true"
+                    android:textSize="@dimen/sixteenSp"
+                    android:transitionName="simple_activity_transition"
+                    android:drawableEnd="@drawable/search"
+                    android:layout_marginEnd="@dimen/activity_vertical_margin"
+                    android:text="@string/schemeorservices"
+                    android:id="@+id/tvIWant"
+                    />
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <include
+        android:layout_weight="2.2"
+        layout="@layout/homealternate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cvBenef" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/ivConfused"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/thirtySixDp"
+        android:visibility="gone"
+        app:srcCompat="@drawable/confused_man"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fourteenSp"
+        android:gravity="center"
+        android:text="@string/gettingconfused"
+        android:layout_below="@+id/ivConfused"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyEightDp"
+        android:padding="@dimen/eightDp"
+        android:layout_marginStart="@dimen/eightyDp"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/fourDp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/fortyEightDp"
+            android:background="@color/buttoncolor"
+            android:id="@+id/textViewGetStarted">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/sixteenSp"
+                android:text="@string/gethelp"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:visibility="gone"
+                android:layout_marginStart="16dp"
+                android:text="@string/getStartedToSurvery"
+                android:textColor="@color/white"
+                android:textSize="@dimen/eightenSp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:visibility="gone"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="22dp"
+                android:text="@string/letushelpyou"
+                android:textColor="@color/white"
+                android:textSize="@dimen/twelveDp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/rightarrow"
+                android:layout_marginEnd="0dp" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

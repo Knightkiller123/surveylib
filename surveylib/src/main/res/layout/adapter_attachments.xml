@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/fourDp"
+    android:layout_marginBottom="@dimen/fourDp"
+
+
+    >
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fourDp"
+        android:layout_margin="@dimen/activity_vertical_margin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fourDp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                >
+                <ImageView
+                    android:layout_width="@dimen/twentyFourDp"
+                    android:layout_height="@dimen/twentyFourDp"
+                    app:srcCompat="@drawable/success"
+                    android:visibility="gone"
+                    android:padding="@dimen/fourDp"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:id="@+id/ivSingleSuccess"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:id="@+id/tvExtraStatic"
+                    android:text="@string/additionalinfoupdated"
+                    android:layout_toRightOf="@+id/ivSingleSuccess"
+                    android:padding="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/fourDp"
+                    android:textSize="@dimen/tenSp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvSingleEdit"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/tenSp"
+                    android:text="@string/edit"
+                    android:layout_alignParentEnd="true"
+
+                    android:padding="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/fourDp"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/rlAttachDoc"
+                android:background="@color/white"
+                android:paddingBottom="@dimen/fourDp"
+                android:layout_marginBottom="1dp"
+
+
+
+                android:layout_height="wrap_content">
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/sixtyDp"
+                    android:text="@string/attachDocs"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="@dimen/activity_vertical_margin"
+                    android:layout_below="@+id/tvDocHeading"
+                    android:textColor="@color/black"
+                    android:background="@drawable/attachment_unselected"
+                    android:id="@+id/tvSingleDoc"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:drawableLeft="@drawable/photographicon"
+                    android:layout_marginRight="@dimen/eightDp"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/round_cross_01"
+                    android:layout_marginRight="@dimen/eightDp"
+                    android:layout_alignParentRight="true"
+                    android:padding="@dimen/fourDp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/tvDocHeading"
+                    android:layout_marginTop="@dimen/fourteenDp"
+                    android:id="@+id/ivSingleCross"
+
+
+                    />
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/cvSpinner"
+                android:background="@color/white"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="@dimen/oneDp"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="@string/upload"
+
+                    android:padding="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/fourDp"
+                    android:textSize="@dimen/tenSp"
+                    android:id="@+id/tvSpinHeaders"/>
+                <TextView
+                    android:layout_below="@+id/tvSpinHeaders"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="@dimen/fortyEightDp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/eightDp"
+                    android:layout_marginRight="@dimen/eightDp"
+                    android:paddingLeft="@dimen/eightDp"
+                    android:paddingRight="@dimen/activity_vertical_margin"
+                    android:textColor="@color/unselectedText"
+                    android:singleLine="true"
+                    android:drawableRight="@drawable/spinnerdownicon"
+                    android:id="@+id/tvDocSelectionSpin"
+                    android:background="@drawable/spinnerlookalike"
+                    android:text="@string/selectdoctype"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:id="@+id/rvgetPages"
+                    android:layout_marginTop="@dimen/eightDp"
+                    android:layout_marginBottom="@dimen/eightDp"
+
+                    android:layout_below="@+id/tvDocSelectionSpin"
+                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            </RelativeLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>-->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="@dimen/twoDp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/eightDp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rlAttachDoc"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/fourDp"
+            android:layout_marginStart="@dimen/eightDp"
+            android:layout_marginBottom="@dimen/eightDp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="@dimen/eightDp"
+                android:layout_width="match_parent"
+                android:id="@+id/tvDocHeading"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/twelveSp"
+                android:text="@string/upload"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/attachDocs"
+                android:textSize="@dimen/fourteenSp"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAttachmentUnSelectText"
+                android:drawablePadding="@dimen/activity_vertical_margin"
+                android:layout_below="@+id/tvDocHeading"
+                android:background="@drawable/attachment_unselected"
+                android:id="@+id/tvSingleDoc"
+                android:padding="@dimen/sixteenDp"
+                android:layout_marginStart="@dimen/eightDp"
+                android:drawableLeft="@drawable/ic_add_attachment"
+                android:layout_marginEnd="@dimen/eightDp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/round_cross_01"
+                android:layout_marginEnd="@dimen/eightDp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/fourDp"
+                android:visibility="gone"
+                android:layout_below="@+id/tvDocHeading"
+                android:layout_marginTop="@dimen/fourteenDp"
+                android:id="@+id/ivSingleCross" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneDp"
+            android:visibility="gone"
+            android:background="@color/grey"
+            android:layout_marginTop="@dimen/eightDp"
+            android:layout_marginBottom="@dimen/eightDp"
+            android:id="@+id/vSep1"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cvSpinner"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="@dimen/oneDp"
+            android:layout_marginStart="@dimen/eightDp"
+            android:layout_marginEnd="@dimen/eightDp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_toStartOf="@+id/tvSingleEdit"
+                android:textStyle="bold"
+                android:text="@string/upload"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/montserrat_semibold"
+                android:padding="@dimen/eightDp"
+                android:textSize="@dimen/twelveSp"
+                android:id="@+id/tvSpinHeaders"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tvSingleEdit"
+                android:visibility="gone"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold"
+                android:textSize="@dimen/tenSp"
+                android:text="@string/edit"
+                android:layout_alignParentEnd="true"
+                android:padding="@dimen/eightDp"
+                android:layout_marginBottom="@dimen/fourDp"
+                android:layout_marginLeft="@dimen/eightDp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_below="@+id/tvSpinHeaders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/eightDp"
+                android:layout_marginEnd="@dimen/eightDp"
+                android:paddingTop="@dimen/twelveDp"
+                android:paddingBottom="@dimen/twelveDp"
+                android:paddingLeft="@dimen/sixteenDp"
+                android:paddingRight="@dimen/activity_vertical_margin"
+                android:textColor="@color/unselectedText"
+                android:singleLine="true"
+                android:textSize="@dimen/fourteenSp"
+                android:drawableEnd="@drawable/downarrow"
+                android:id="@+id/tvDocSelectionSpin"
+                android:background="@drawable/spinnerlookalike"
+                android:text="@string/selectdoctype"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/rvgetPages"
+                android:layout_marginTop="@dimen/eightDp"
+                android:layout_marginBottom="@dimen/eightDp"
+                android:layout_below="@+id/tvDocSelectionSpin"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneDp"
+            android:background="@color/grey"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/eightDp"
+            android:layout_marginBottom="@dimen/eightDp"
+            android:id="@+id/vSep2"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
+    <!--
+    </RelativeLayout>-->

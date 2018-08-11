@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/eightDp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvNonListTitle"
+        android:textSize="@dimen/sixteenSp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textColor="@color/black"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="3"
+    android:layout_marginLeft="@dimen/eightDp"
+    android:layout_marginRight="@dimen/eightDp"
+    android:layout_below="@+id/tvNonListTitle"
+    android:layout_marginTop="@dimen/fourDp"
+    >
+<TextView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:id="@+id/tvFirst"
+    android:background="@drawable/white_curved"
+    android:padding="@dimen/eightDp"
+    android:textSize="@dimen/tenSp"
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:id="@+id/tvSecond"
+        android:background="@drawable/white_curved"
+        android:padding="@dimen/eightDp"
+        android:textSize="@dimen/tenSp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_margin="8dp"
+        android:id="@+id/tvThird"
+        android:background="@drawable/white_curved"
+        android:padding="@dimen/eightDp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tenSp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:visibility="gone"
+        android:background="@color/lineColor"/>
+</RelativeLayout>

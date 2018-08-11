@@ -1,0 +1,125 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/buttoncolor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/toolbarcolor</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:colorControlNormal">@color/Sign</item>
+
+    </style>
+
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+
+
+    </style>
+
+    <style name="MyCustomTextAppearancecomm" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">@dimen/tenSp</item>
+        <item name="android:layout_gravity">start</item>
+
+
+    </style>
+
+    <style name = "MyDialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name = "android:windowContentOverlay" >@null</item >
+        <item name = "android:colorBackgroundCacheHint" >@null</item >
+        <item name = "android:backgroundDimEnabled">true</item>
+        <item name = "android:windowBackground" >@android:color/transparent</item >
+    </style >
+
+
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.Dialog">
+                        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+                    
+    </style>
+
+
+    <style name="TextViewProfile">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_marginBottom">1px</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">@dimen/sixteenDp</item>
+        <item name="android:padding">@dimen/sixteenDp</item>
+    </style>
+
+
+    <style name="EditTextCommunication">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:padding">@dimen/eightDp</item>
+        <item name="android:textSize">@dimen/fourteenSp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/edittextunfocused</item>
+
+    </style>
+
+
+    <style name="TextHeaderCommunication">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textSize">@dimen/tenSp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/activity_vertical_margin</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="imageEraseData">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:src">@drawable/round_cross_01</item>
+        <item name="android:padding">@dimen/fourDp</item>
+        <item name="android:visibility">gone</item>
+
+    </style>
+
+    <style name="TextHeaderProfile">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:alpha">0.6</item>
+        <item name="android:textSize">@dimen/twelveSp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/twentyDp</item>
+
+    </style>
+
+    <style name="EditTextProfile">
+        <item name="android:editable">false</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/fourteenSp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginTop">@dimen/fourDp</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+    <style name="ViewHeader">
+        <item name="android:layout_height">@dimen/oneDp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/eightDp</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+</resources>

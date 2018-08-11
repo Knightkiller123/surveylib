@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlSuccessfulPayment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlTop"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/successfulapplied"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/fourDp"
+            android:layout_centerVertical="true"
+            android:id="@+id/ivGotoHomeSuccess"
+            app:srcCompat="@drawable/gotohome"/>
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/eightyDp"
+        android:layout_gravity="center"
+        android:id="@+id/ivSuccess"
+        app:srcCompat="@drawable/success"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thankyou"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/black"
+        android:id="@+id/tvCong"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/opportunity"
+        android:gravity="center"
+        android:padding="@dimen/fourDp"
+        android:id="@+id/tvApplied"
+        android:layout_marginTop="@dimen/eightDp"
+        android:textSize="@dimen/sixteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recvdPayment"
+        android:gravity="center"
+        android:id="@+id/tvApplied1"
+        android:padding="@dimen/fourDp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/fourteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/black"
+        android:id="@+id/tvAppliedDates"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/sixtyDp"
+        android:layout_gravity="center"
+        android:text="@string/esign"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/fortyEightDp"
+        android:background="@color/buttoncolor"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/thirtyDp"
+        android:paddingEnd="@dimen/thirtyDp"
+        android:paddingTop="@dimen/twelveDp"
+        android:paddingBottom="@dimen/twelveDp"
+        android:id="@+id/tvEsignApll"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/or"
+        android:gravity="center"
+        android:id="@+id/tvOrSign"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+
+        android:layout_marginTop="@dimen/thirtyTwoDp"
+        android:textSize="@dimen/sixteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/skipNow"
+        android:gravity="center"
+        android:id="@+id/tvViewApp"
+        android:textColor="@color/buttoncolor"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:textSize="@dimen/fourteenSp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/print"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="@dimen/eightDp"
+        android:layout_marginBottom="@dimen/sixtyFourDp"
+        android:id="@+id/tvPrint"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/thirtyTwoDp"
+        android:textSize="@dimen/sixteenSp"/>
+
+    <View
+        android:layout_marginTop="@dimen/twelveDp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/sixtyDp"
+        android:layout_height="@dimen/twoDp"
+        android:background="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rate_your_experience_with_us"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/black"
+        android:id="@+id/tvRateText"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbRating"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:stepSize="1.0"
+        android:layout_gravity="center"
+        android:numStars="5"/>
+
+    <View
+        android:id="@+id/viewImproveWhat"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/sixtyDp"
+        android:visibility="gone"
+        android:layout_height="@dimen/twoDp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/what_could_be_improved"
+        android:layout_gravity="center"
+        android:id="@+id/tvImproveWhat"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/twentyDp"
+        android:textSize="@dimen/sixteenSp"
+        android:visibility="gone"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:layout_margin="@dimen/twentyDp"
+        android:layout_width="match_parent"
+        android:background="@drawable/drawable_rating_feedback"
+        android:inputType="textMultiLine"
+        android:layout_height="@dimen/oneHundredDp"
+        android:hint="@string/write_your_feedback_here"
+        android:gravity="start"
+        android:id="@+id/etFeedBack"
+        android:textSize="@dimen/fourteenSp"
+        android:padding="@dimen/twelveDp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:gravity="center"
+        android:layout_margin="@dimen/sixteenDp"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/fortyEightDp"
+        android:background="@color/buttoncolor"
+        android:textSize="@dimen/twentySp"
+        android:textColor="@color/white"
+        android:id="@+id/tvSubmitReview"
+        android:padding="@dimen/twelveDp"
+        android:textStyle="bold"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

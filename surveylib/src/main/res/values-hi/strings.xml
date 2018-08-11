@@ -1,0 +1,442 @@
+<resources>
+    <string name="app_name">Saral HarLabh</string>  
+     
+      
+      
+     <string name="home">होम</string> 
+     
+    <string name="profile">प्रोफाइल</string> 
+     
+    <string name="needhelp">मदद चाहिए ?</string> 
+    <string name="easygovcontact">18001802128</string> 
+    <string name="easygovemail">saral.haryana@gov.in</string> 
+    <string name="chat">हम से बात करे</string> 
+    <string name="about">जानिये</string> 
+    <string name="aboutus">हमारे बारे में</string> 
+    <string name="career">व्यवसाय</string> 
+    <string name="contact">हमसे संपर्क करें</string> 
+    <string name="read">और पढ़ें</string> 
+    <string name="faq">सामान्य प्रश्न</string> 
+    <string name="privacy">गोपनीयता नीति</string> 
+    <string name="tnc">नियम और शर्तें</string> 
+     
+     
+     
+     
+     
+    <string name="signin">साइन इन करें</string> 
+    <string name="ad_phn">आधार नंबर/फ़ोन नंबर</string> 
+    <string name="pass">पासवर्ड</string> 
+    <string name="forgot">पासवर्ड भूल गए?</string> 
+    <string name="signIn">साइन इन करें</string> 
+    <string name="signCaps">साइन इन करें</string> 
+    <string name="noaccnt">क्या सरल खाता नहीं है?</string> 
+    <string name="signup">पंजीकरण करें</string> 
+    <string name="invalid">अमान्य नंबर/पासवर्ड</string> 
+     
+    <string name="next">आगे बढ़े</string> 
+    <string name="already">पहले से ही ईज़ीगव अकाउंट है?</string> 
+     
+    <string name="aadhaar">आधार कार्ड</string> 
+    <string name="phn">फ़ोन नंबर</string> 
+    <string name="whyaadhaar">आधार क्यों?</string> 
+    <string name="whynumber">फ़ोन नंबर क्यों?</string> 
+    <string name="enteraadhaar">अपना 12 अंकों का आधार संख्या दर्ज करें</string> 
+    <string name="enterAdhr">आवेदक का 12 अंकों का आधार कार्ड नंबर दर्ज करें</string> 
+    <string name="aadhaarno">आधार संख्या</string> 
+    <string name="staticagree">अगला क्लिक करके आप इजीगोव से सहमत हैं</string> 
+    <string name="and">और</string> 
+     
+    <string name="otpsent">हमने आपके आधार लिंक्ड नंबर पर आपको सत्यापन कोड भेजा है</string> 
+    <string name="resend">ओटीपी पुनः भेजें</string> 
+    <string name="verify">सत्यापित करें</string> 
+    <string name="createPass">अपने खाते के लिए पासवर्ड बनाएं</string> 
+    <string name="enterPass">पास वर्ड दर्ज करें</string> 
+    <string name="cnfrm">पासवर्ड की पुष्टि कीजिये</string> 
+    <string name="usePass">Saral पर फिर से लॉगिन करने के लिए पासवर्ड याद रखें</string> 
+    <string name="enterNumber">कृपया अपना 10 अंकों का फ़ोन नंबर दर्ज करें</string> 
+    <string name="selectoptn">आधार कार्ड की पुष्टि करने के लिए कृपया एक विकल्प चुनें</string> 
+    <string name="getonPhn">फोन पर सत्यापन कोड प्राप्त करें</string> 
+    <string name="biometric">बॉयोमीट्रिक</string> 
+    <string name="iris">आँख की पुतली</string> 
+    <string name="fingerprint">फिंगर प्रिंट</string> 
+    <string name="otp">ओटीपी (एक समय पासवर्ड)</string> 
+     
+     
+    <string name="analysis">हमारी विश्लेषण</string> 
+    <string name="valueformoney">फायेदे</string> 
+    <string name="firstName">नाम</string> 
+     
+    <string name="contactno">संपर्क संख्या</string> 
+    <string name="dob">जन्मतिथि</string> 
+    <string name="gender">लिंग</string> 
+     
+    <string name="date">तारीख</string> 
+     
+    <string name="gotit">समझ गया</string> 
+    <string name="otpmethod">ओटीपी</string> 
+    <string name="otpinfo">इस सत्यापन विधि में हम आपके आधार लिंक नंबर पर आपके आधार कार्ड को सत्यापित करने के लिए 6 अंकों का सत्यापन कोड भेजेंगे</string> 
+    <string name="continueWith">जारी रखें</string> 
+    <string name="verificationMode">सत्यापन मोड</string> 
+    <string name="alreadyexist">उपयोगकर्ता पहले से ही पंजीकृत है यहाँ </string> 
+    <string name="verification">सत्यापन</string> 
+    <string name="getting">समस्या हो रही है?</string> 
+    <string name="or">या</string> 
+    <string name="signUpUsingAdhar">आधार नंबर का उपयोग करके साइन अप करें</string> 
+    <string name="title_activity_select_service">SelectServiceActivity</string> 
+    <string name="iwant">मुझे चाहिए</string> 
+     
+    <string name="payments">भुगतान</string> 
+    <string name="documents">दस्तावेज़</string> 
+     
+     
+    <string name="logout">लोग आउट</string> 
+    <string name="empowering">सरकार से आपकी क्या जरूरत है?</string> 
+    <string name="selectState">राज्य चुनें</string> 
+    <string name="searchDistrict">जिला खोजें</string> 
+    <string name="forgottext">अपना पासवर्ड रीसेट करने के लिए, कृपया अपना आधार नंबर या फ़ोन नंबर दर्ज करें जिसे आपने अपना अकाउंट बनाने के लिए उपयोग किया था</string> 
+    <string name="contin">आगे बढ़ें</string> 
+     
+     
+     
+    <string name="skip">छोड़ें</string> 
+    <string name="signUpCaps">साइन अप करें</string> 
+    <string name="getStarted">आरंभ करने के लिए साइन इन करें</string> 
+    <string name="poptextsign">वांछित पाने के लिए खाते में साइन इन करें</string> 
+    <string name="poptextsign1">सरकारी सेवाएं और योजनाएं</string> 
+    <string name="netIssue">अपना इंटरनेट संपर्क जांचे</string> 
+    <string name="serverIssue">सरल सर्वर से कनेक्ट करने में असमर्थ</string> 
+     
+    <string name="selectdoctype">दस्तावेज़ प्रकार चुनें</string> 
+    <string name="documenttype">दस्तावेज़ का प्रकार</string> 
+    <string name="title_activity_survey">SurveyActivity</string> 
+    <string name="benefits">लाभ</string> 
+    <string name="knowmore">अधिक जानिए</string> 
+    <string name="checkeligible">पात्रता की जांच करें</string> 
+     
+    <string name="yourstory">आपकी कहानी</string> 
+    <string name="attachfile">फ़ाइल जोड़ें</string> 
+    <string name="opencamera">कैमरा खोलो</string> 
+    <string name="choosegallery">इन दस्तावेजों मे से चुनें</string> 
+    <string name="easygovlibrary">इज़ीगोव लाइब्रेरी</string> 
+    <string name="street1">गली 1</string> 
+    <string name="Street2">गली 2</string> 
+    <string name="city">शहर</string> 
+    <string name="zip">पिन कोड</string> 
+    <string name="Rs">₹</string> 
+    <string name="information">जानकारी</string> 
+    <string name="havingaadhar">"क्या आवेदक का आधार कार्ड है?"</string>
+    <string name="havingaadharmyself">क्या आपके पास आधार कार्ड है?</string>
+    <string name="applicatiodetails">आवेदक का विवरण</string> 
+    <string name="schemes">योजनाएं</string> 
+    <string name="elegibility">पात्रता</string> 
+    <string name="application">आवेदन</string> 
+    <string name="checkout">चेक आउट</string> 
+     
+    <string name="title_activity_success_ful_payment">SuccessFulPaymentActivity</string> 
+    <string name="successfulapplied">सफलतापूर्वक लागू</string> 
+    <string name="congatulation">बधाई हो!</string> 
+    <string name="applied">आपका आवेदन सफलता पूर्वक जमा हो चुका है</string> 
+    <string name="save">पुष्टि कर के सेव करे </string> 
+    <string name="view">इस आवेदन को देखें</string> 
+    <string name="esign">Esign This आवेदन</string> 
+    <string name="thankyou">धन्यवाद</string> 
+    <string name="opportunity">हमें आपको सेवा करने का मौका देने के लिए</string> 
+    <string name="title_activity_esign_form">EsignFormActivity</string> 
+    <string name="letgetStarted">क्या आप जो ढूंड रहे थे, नही मिला? यहां क्लिक करें!</string> 
+    <string name="getStartedToSurvery">भ्रमित हो रही है?</string> 
+    <string name="letushelpyou">आइए हम आपके लिए सबसे अच्छी योजनाओं को ढूंढने में मदद करें?</string> 
+     
+    <string name="empoweringpeople">लोगों का सशक्तिकरण</string> 
+    <string name="deliveringconvenience">वितरण फायदे</string> 
+    <string name="management">योजनाएं लागू</string> 
+    <string name="searchapplication">आवेदन खोजें</string> 
+    <string name="filterapplication">आवेदन फ़िल्टर करें</string> 
+    <string name="appstatus">आवेदन की स्थिति</string> 
+    <string name="whyUseAadhaar">आधार किसी भी सेवाओं के लिए आवेदन करते समय 12-अंकों की अद्वितीय पहचान संख्या का एकमात्र पहचान प्रमाण के रूप में इस्तेमाल किया जा सकता है।</string> 
+    <string name="whyuseNumber">फोन नंबर अपने आप को पहचानने का एकमात्र तरीका है। यह लोगों को आपको ढूंढने में सहायता करता है और आपको सुरक्षित रखता है।</string> 
+    <string name="irisInfo">आँख की पुतली recognition biometric systems apply pattern-recognition techniques to images of the irises of an individual eyes.</string> 
+    <string name="fingerInfo">फ़िंगर प्रिंट सुरक्षा का एक सुविधाजनक रूप लाता है जो एक पासवर्ड (और लंबा पासवर्ड!) की तुलना में अधिक सुविधाजनक है।</string> 
+    <string name="saves"><![CDATA[और]]></string> 
+    <string name="tryagain">पुनः प्रयास करें</string> 
+
+    <string name="nextTime">दुर्भाग्यवश, हम आपकी पात्रता निर्धारित नहीं कर सके हम हर रोज नई योजनाएं जोड़ रहे हैं, कृपया फिर से हमसे संपर्क करें</string> 
+    <string name="checkToEsign">कृपया यह आवेदन एस्साइज करने के लिए यहां क्लिक करें</string> 
+    <string name="govtFee">सरकारी शुल्क</string> 
+    <string name="proffCharge">व्यावसायिक शुल्क</string> 
+    <string name="subtotal">उप-योग</string> 
+    <string name="gstIncluded">18% जीएसटी में शामिल</string> 
+    <string name="noResult">कोई परिणाम नहीं मिला</string> 
+    <string name="attachDocs">दस्तावेज़ संलग्न करें</string> 
+    <string name="ServiceLevel">सेवा का स्तर</string> 
+    <string name="title_activity_payment_failed">PaymentFailedActivity</string> 
+    <string name="sorry">माफ़ कीजिये! हम आपके भुगतान की प्रक्रिया नहीं कर सके</string> 
+    <string name="tnfailed">भुगतान असफल हुआ</string> 
+    <string name="startover">पुनः प्रारंभ करें</string> 
+    <string name="upDate">यह संस्करण पुरानी हो चुका है। कृपया नया संस्करण अपडेट करें</string> 
+    <string name="title_activity_web_view">WebViewActivity</string> 
+    <string name="skipNow">अब छोड़ें</string> 
+    <string name="recvdPayment">हमने आपके खाते से सफलतापूर्वक भुगतान प्राप्त कर लिया है</string> 
+     
+    <string name="yourDetails">आपका विवरण</string> 
+    <string name="yourDetailstext">नीचे विवरण भरकर अपना खाता पूरा करें</string> 
+    <string name="email">ईमेल पता</string> 
+    <string name="sort">छँटाई</string> 
+    <string name="filter">फ़िल्टर</string> 
+    <string name="sortby">इसके अनुसार क्रमबद्ध करें</string>  
+    <string name="selectLanguage">भाषा चुनिए</string>
+    <string name="english">English</string>
+    <string name="apply">लागू करें</string>
+    <string name="hindi">हिंदी</string>
+
+    <string name="otpsents">हमने आपको अपने फ़ोन नंबर पर सत्यापन कोड भेजा है</string>
+    <string name="pay">वेतन</string>
+    <string name="billing">बिल भेजने का पता </string>
+    <string name="attachments">संलग्नक</string>
+    <string name="noteligible">क्षमा करें, आप पात्र नहीं हैं</string>
+
+    <string name="eligible">हम खुश हैं कि आप पात्र हैं </string>
+    <string name="state">राज्य</string>
+    <string name="district">जिला</string>
+    <string name="noscheme">कोई योजना नहीं मिली</string>
+    <string name="upload">अपलोड </string>
+    <string name="yes">जी हाँ </string>
+    <string name="no">जी नहीं </string>
+    <string name="ok">ठीक हैं</string>
+    <string name="Services">सेवाएं</string>
+    <string name="coupon">कूपन</string>
+    <string name="done">किया हुआ</string>
+    <string name="myself"> स्वयं के लिए </string>
+    <string name="someoneelse">किसी और के लिए </string>
+    <string name="cancel">रद्द करना</string>
+    <string name="selectdistrict">जिला चुनें</string>
+    <string name="haryana">हरयाणा</string>
+    <string name="invalidnumber">अमान्य संख्या</string>
+    <string name="saveapprove">पुष्टि कर के सेव करे  </string>
+    <string name="Saved">सेव </string>
+    <string name="schemeorservices"><![CDATA[सेवाओं और योजनाओं के लिए यहां टाइप करें]]></string>
+    <string name="gethelp">मदद करने के लिए यहां क्लिक करें</string>
+    <string name="gettingconfused">सहायता चाहिए?</string>
+
+    <string name="validDate">कृपया एक मान्य तिथि प्रविष्ट करें</string>
+
+    <string name="select">चुनाव करें</string>
+    <string name="days"> दिन </string>
+    <string name="applicationdetails">आवेदन के ब्यौरे</string>
+    <string name="confirmapplication">अपने आवेदन की पुष्टि करें</string>
+
+    <string name="male">पुरुष</string>
+    <string name="femlae">महिला</string>
+    <string name="transgender">ट्रांसजेंडर</string>
+    <string name="changepass">पासवर्ड बदलें</string>
+    <string name="Servicesorschemes">योजनाएं/सेवाएँ</string>
+    <string name="addanotheraddress">दूसरा पता भरो</string>
+    <string name="commaddress">संचार पता</string>
+    <string name="sameasbilling">संचार पता के समान</string>
+    <string name="dont">स्वीकार्य नहीं है</string>
+    <string name="accept">स्वीकार्य है</string>
+    <string name="careof">की देखभाल</string>
+    <string name="sonof">पुत्र श्री</string>
+    <string name="daughterof">पुत्री श्री</string>
+    <string name="wifeof">पत्नी श्री</string>
+    <string name="I">मैं</string>
+    <string name="residentof">का निवासी</string>
+    <string name="selfDeclaration">स्वप्रमाणित घोषणा पत्र</string>
+    <string name="fathersname">पिता / पति का नाम</string>
+
+    <string name="selfDec"> मैं यह भी प्रमाणित करते हुए घोषणा करता / करती हूँ कि  उपरोक्त दिए गए तथ्य, मेरी व्यक्तिगत जानकारी एवं विश्वास में शुद्ध एवं सत्य है | मैनें उसमें कुछ भी छुपाया नहीं है |<br/> <br/>  </string>
+    <string name="todaysapp">आज का अनुप्रयोग</string>
+    <string name="onlyschemes">केवल योजनाएं</string>
+    <string name="onlyservices">केवल सेवाएं</string>
+    <string name="applicantid">आवेदक आईडी</string>
+    <string name="schemename">योजना का नाम</string>
+    <string name="servicename">सेवा का नाम</string>
+    <string name="searchstr">कृपया खोज पाठ दर्ज करें</string>
+    <string name="searchoptnselect">कृपया खोज विकल्प चुनें</string>
+    <string name="oldpass">पुराना पासवर्ड</string>
+    <string name="newpass">नया पासवर्ड</string>
+    <string name="retypepass">पासवर्ड फिर से लिखें</string>
+    <string name="Status">स्थिति</string>
+    <string name="emailnonmandatory">ईमेल पता (ऐच्छिक)</string>
+    <string name="helpsupport">मदद या समर्थन</string>
+    <string name="upDateStr">अद्यतन करें</string>
+    <string name="passupdatet">पासवर्ड सफलतापूर्वक अपडेट किया गया</string>
+    <string name="sonoff">पुत्र श्री</string>
+    <string name="daughteroff">पुत्री श्री</string>
+    <string name="nodata">कोई डेटा नहीं मिला</string>
+    <string name="intro_text">फ्रेम के भीतर QR संरेखित करें</string>
+    <string name="awesome">बहुत बढ़िया!</string>
+    <string name="getStart">आरम्भ करें</string>
+    <string name="alert">चेतावनी !</string>
+    <string name="navigateaway">क्या आप वाकई इस स्क्रीन से दूर नेविगेट करना चाहते हैं ?</string>
+    <string name="notnow">अभी नहीं</string>
+    <string name="yesiwnt">हाँ अभी </string>
+    <string name="optional">(ऐच्छिक)</string>
+    <string name="congatulationeligible">बधाई! आप योग्य हैं</string>
+    <string name="loginmode">लॉगिन के लिए कृपया एक मोड चुनें</string>
+    <string name="irisnotsupported">आईरिस समर्थित नहीं है</string>
+    <string name="validotp">कृपया एक वैध ओटीपी दर्ज करें</string>
+    <string name="fingercaptured">फ़िंगर कैप्चर किया गया</string>
+    <string name="nofingerprint">फ़िंगरप्रिंट कैप्चर करने में असमर्थ</string>
+    <string name="sessionexpired">सत्र की समय सीमा समाप्त! कृपया फिर से लॉगिन करें</string>
+    <string name="plentername">कृपया प्रथम नाम दर्ज करें</string>
+    <string name="plcareof">कृपया देखभाल का दर्ज करें</string>
+    <string name="plphone">कृपया फोन नंबर दर्ज करें</string>
+    <string name="pladd1">पता पंक्ति 1 दर्ज करें</string>
+    <string name="pladd2">कृपया पता पंक्ति 2 दर्ज करें</string>
+    <string name="plcity">कृपया अपना शहर दर्ज करें</string>
+    <string name="plstate">कृपया राज्य दर्ज करें </string>
+    <string name="pldist"> कृपया जिला दर्ज करें </string>
+
+    <string name="innovate"> Innovated <![CDATA[&]]> Engineered by EasyGov</string>
+    <string name="search">खोजें</string>
+    <string name="searchoptn">खोज विकल्प</string>
+    <string name="applicantname">आवेदक का नाम</string>
+    <string name="searchresult">Search Result</string>
+    <string name="applicationstatus">आवेदन की स्थिति</string>
+    <string name="wifeoff">पत्नी श्री</string>
+    <string name="qrcode">क्यूआर कोड</string>
+    <string name="nodevice">कोई संगत उंगली सेंसर नहीं मिला</string>
+    <string name="plemail">कृपया वैध ईमेल दर्ज़ करें</string>
+    <string name="plem">कृपया ईमेल दर्ज करें</string>
+    <string name="parseerror">Parse Error</string>
+    <string name="passnomatch">पासवर्ड मेल नहीं खाते</string>
+    <string name="pldob">कृपया दिनांक का जन्म दर्ज करें</string>
+    <string name="plzip">कृपया ज़िप कोड दर्ज करें</string>
+    <string name="plPermission">कृपया अनुमति दें</string>
+    <string name="plcopon">कृपया कूपन दर्ज करें</string>
+    <string name="plvalidaadhaar">कृपया एक वैध आधार संख्या दर्ज करें</string>
+    <string name="capturefailed">माफ़ कीजिये ! छवि को कैप्चर करने में असमर्थ</string>
+    <string name="imagecancelled">उपयोगकर्ता कैप्चर रद्द कर दिया</string>
+    <string name="installfilemanager">Please install a File Manager</string>
+    <string name="plenter">कृपया दर्ज करें</string>
+    <string name="plzipvalid">पिनकोड 6 अंकों का होना चाहिए</string>
+    <string name="plvalidheight">कृपया एक वैध ऊंचाई दर्ज करें</string>
+    <string name="plvalidage">कृपया एक वैध आयु दर्ज करें</string>
+    <string name="plcheckbox">कृपया चेक बॉक्स का चयन करें</string>
+    <string name="confirmpass">कृपया पासवर्ड की पुष्टि करें दर्ज करें</string>
+    <string name="plpass">कृप्या पास्वर्ड भरो</string>
+    <string name="plmethod">कृपया एक विधि चुनें</string>
+    <string name="pllang">कृपया भाषा चुनें</string>
+    <string name="createPassword">पासवर्ड बनाएं</string>
+    <string name="startintoappnew">अपने लिए योग्य सर्विस / योजना चुनने की प्रक्रिया शुरू कीजिए</string>
+    <string name="yearly"> सालाना </string>
+    <string name="halfyearly">अर्धवार्षिक</string>
+    <string name="quarterly">त्रैमासिक</string>
+    <string name="monthly" >महीने के</string>
+    <string name="weekly">साप्ताहिक</string>
+    <string name="daily">दैनिक</string>
+    <string name="hourly">प्रति घंटा</string>
+    <string name="onetime">एक बार</string>
+    <string name="fortext">के लिए</string>
+    <string name="fromdate">दिनांक से</string>
+    <string name="todate">दिनांक तक</string>
+    <string name="cashbenefits">आपके खाते में नकद लाभ</string>
+    <string name="cash">नकद लाभ</string>
+    <string name="noncash">गैर नकद लाभ</string>
+    <string name="additionalinfo"> अतिरिक्त जानकारी </string>
+    <string name="issuer">जारीकर्ता</string>
+    <string name="authoritytype">प्राधिकरण प्रकार</string>
+    <string name="plselect">कृपया चुनें</string>
+    <string name="plAuthority">कृपया प्राधिकरण का चयन करें</string>
+    <string name="indicative">पात्रता केवल संकेतक है</string>
+    <string name="edit">संपादित करें</string>
+    <string name="plselectall">कृपया सभी दस्तावेज़ चुनें</string>
+    <string name="oldpassempty">पुराने पासवर्ड खाली</string>
+    <string name="newpassempty">नया पासवर्ड रिक्त</string>
+    <string name="familymember">परिवार के सदस्य के लिए </string>
+    <string name="familymemberques">आवेदक के साथ अपने रिश्ते का चयन करें?</string>
+    <string name="beneficiarytype">लाभार्थी का प्रकार</string>
+    <string name="plbenfittype">सूची से अपने लाभार्थी प्रकार का चयन करें</string>
+    <string name="allcategories">सभी विभाग</string>
+
+    <string name="please_select_beneficiary">कृपया लाभार्थी का चयन करें</string>
+    <string name="my_documents">मेरे दस्तावेज</string>
+    <string name="change_language">भाषा बदलो</string>
+    <string name="change_beneficiary_type">लाभार्थी प्रकार बदलें</string>
+    <string name="select_category">श्रेणी का चयन करें</string>
+    <string name="son">बेटा</string>
+    <string name="daughter">बेटी</string>
+    <string name="father">पिता</string>
+    <string name="mother">मां</string>
+    <string name="sister">बहन</string>
+    <string name="brother">भाई</string>
+    <string name="spouse">पति या पत्नी</string>
+    <string name="dependent">आश्रित</string>
+    <string name="addrelative">परिवार के सदस्य जोड़ें</string>
+    <string name="knowyourschemes">अपनी योजनाओं को जानें</string>
+    <string name="remove">हटाना</string>
+    <string name="beneficiary">लाभार्थी</string>
+    <string name="hometitle">आप किस के लिए सरकारी योजना चाहते हैं</string>
+    <string name="addfamilymember">परिवार के सदस्य जोड़ें</string>
+    <string name="family">पारिवारिक विवरण</string>
+    <string name="peoplehelped">मदद किये गए लोग </string>
+    <string name="addanother">अन्य व्यक्ति जोड़ें</string>
+    <string name="knowtheirschemes">उनकी योजनाओं को जानें</string>
+    <string name="self">स्वयं</string>
+    <string name="nopayments">कोई भुगतान नहीं!</string>
+    <string name="print">प्रिंट रसीद</string>
+    <string name="careoff">C/O</string>
+    <string name="scanqr">स्कैन QR</string>
+    <string name="scanAadhaar">अपने आधार कार्ड पर QR को स्कैन करें</string>
+    <string name="troubleqr">मुसीबत स्कैनिंग QR? मैन्युअल रूप से भरें</string>
+    <string name="house">माकन नंबर</string>
+    <string name="street">सड़क</string>
+    <string name="landmark">सीमा चिन्ह</string>
+    <string name="locality">इलाका</string>
+    <string name="vtc">गांव / नगर / शहर</string>
+    <string name="subdist">उप जिला</string>
+    <string name="postoffice">डाक घर</string>
+    <string name="oneday">एक दिन</string>
+    <string name="sevenday">7 दिन</string>
+    <string name="forteenday">14 दिन</string>
+    <string name="thirtyday">30 दिन</string>
+    <string name="lifetime">जीवन काल</string>
+    <string name="account_mismatch">खाता संख्याएं मेल नहीं खाते हैं</string>
+    <string name="addsomeone">किसी और को जोड़ें</string>
+    <string name="allentries">कृपया सभी प्रविष्टियां दर्ज करें</string>
+    <string name="enterad_phn">आधार / फोन नंबर दर्ज करें</string>
+    <string name="sorry_you_cant_apply_without_aadhar_card">माफ़ कीजिये! आप आधार कार्ड के बिना इस योजना पर लागू नहीं हो सकते हैं।</string>
+    <string name="sorry_you_cant_apply_aadhar_data_changed">आप इस योजना पर आवेदन नहीं कर सकते हैं क्योंकि जन्म तिथि / डोमेसिइल / सर्वेक्षण के लिंग मूल्य आधार डेटा से मेल नहीं खाते हैं। कृपया अपने आधार में उल्लिखित डेटा के साथ सर्वेक्षण को पुनरारंभ करें या अपने आधार को संशोधित करें । </string>
+    <string name="gotohome">होम पर वापिस जाएँ</string>
+    <string name="sorry_you_cant_delete_this_document">यह दस्तावेज़ आपकी वर्तमान लागू सेवाओं में से एक में उपयोग में है। आवेदन संसाधित होने के बाद आप इसे हटा सकते हैं।</string>
+    <string name="want_to_delete">हटाना चाहते हैं</string>
+    <string name="are_you_really_want_to_delete_the_file_you_will_not_be_able_to_recover_them">क्या आप वास्तव में फाइल को हटाना चाहते हैं? आप उन्हें पुनर्प्राप्त करने में सक्षम नहीं होंगे।</string>
+    <string name="delete">हटाना</string>
+    <string name="limitexceeded">कृपया 3 एमबी से कम फ़ाइल संलग्न करें</string>
+    <string name="full_name">पूरा नाम</string>
+    <string name="aadhaarnotworking">आधार प्रमाणित करने में असमर्थ, कृपया बाद में पुनः प्रयास करें</string>
+    <string name="dismiss">खारिज</string>
+    <string name="submit">जमा करें</string>
+    <string name="rating">योग्यता निर्धारण</string>
+    <string name="ratingtext">हमारे साथ आपका अनुभव कैसा रहा?</string>
+    <string name="experiencenegative">क्या सुधार किया जा सकता है?</string>
+    <string name="experiencepositive">आपको सबसे ज़्यादा क्या पसंद आया?</string>
+    <string name="percent_0">0%</string>
+
+    <string name="uploading_attachments">संलग्नक अपलोड हो रहा है...</string>
+    <string name="doc_attached">दस्तावेज संलग्न</string>
+
+
+    <string name="phnPermissionNeeded">EasyGov को सिस्टम पर आपके डिवाइस की पहचान करने की अनुमति देने के लिए फ़ोन अनुमति की आवश्यकता है ताकि यदि आप किसी भी समस्या का सामना कर सकते हैं तो हम डीबग कर सकते हैं।</string>
+    <string name="locationPermissionNeeded">हमें आपके स्थान को पढ़ने की अनुमति देता है ताकि हम आपके क्षेत्र में सर्वोत्तम योजनाओं और सेवाओं के साथ आपकी सेवा कर सकें।</string>
+    <string name="storagePermissionNeeded"><![CDATA[EasyGov को आपकी गैलरी और फ़ाइलों तक पहुंचने की अनुमति देने से आप अपनी छवियों और दस्तावेजों को अपलोड कर सकते हैं।]]></string>
+    <string name="what_could_be_improved">क्या सुधार किया जा सकता है?</string>
+    <string name="write_your_feedback_here">यहां अपना फीडबैक लिखें...</string>
+    <string name="rate_your_experience_with_us">हमारे साथ अपने अनुभव को रेट करें</string>
+    <string name="very_bad">बहुत बुरा!</string>
+    <string name="bad">बुरा!</string>
+    <string name="ok_ok">ठीक ठीक!</string>
+    <string name="good">अच्छा!</string>
+    <string name="amazing">गजब का!</string>
+    <string name="session_expired">आपका सेशन समाप्त हो गया है! कृपया फिर लॉगिन लें।</string>
+    <string name="login">लॉगिन</string>
+    <string name="address">पता</string>
+    <string name="invalid_password">Please enter a valid password.</string>
+    <string name="short_pwd">Password length should be atleast 6.</string>
+
+
+</resources>
+
+
+

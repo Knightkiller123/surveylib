@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/search_days"
+
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:id="@+id/rlDaysClose"
+        android:alpha="0.6"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/oneEightyDp"
+
+        android:clickable="true"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eightDp"
+            android:layout_marginBottom="@dimen/eightDp"
+            android:layout_below="@+id/tvInfooptn"
+            android:layout_marginStart="@dimen/eightDp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/eightDp"
+                android:textColor="@color/black"
+
+                android:text="@string/oneday"
+                android:id="@+id/tvOneDay"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+                android:text="@string/sevenday"
+                android:id="@+id/tvSevenDay"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+
+                android:text="@string/forteenday"
+                android:id="@+id/tvFourteenDays"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+
+                android:text="@string/thirtyday"
+                android:id="@+id/tvThirtyDays"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+                android:text="@string/lifetime"
+                android:id="@+id/tvLifetime"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

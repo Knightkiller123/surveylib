@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:id="@+id/search_popup_element"
+
+
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:id="@+id/rlSearchOption"
+        android:alpha="0.6"></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/oneEightyDp"
+        android:layout_marginBottom="@dimen/oneEightyDp"
+        android:clickable="true"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvInfooptn"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/twentySp"
+            android:text="@string/searchoptn"
+            android:background="@color/notifycolor"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvInfooptn"
+            android:layout_marginStart="@dimen/eightDp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+
+                android:text="@string/applicantname"
+                android:id="@+id/tvSearchByName"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:text="@string/applicantid"
+                android:id="@+id/tvSearchByid"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+
+                android:text="@string/schemename"
+                android:id="@+id/tvSearchByscheme"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_vertical_margin"
+                android:textSize="@dimen/eightenSp"
+                android:layout_marginTop="@dimen/twentyDp"
+                android:textColor="@color/black"
+
+                android:text="@string/servicename"
+                android:id="@+id/tvSearchByservice"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

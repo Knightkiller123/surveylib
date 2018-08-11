@@ -1,0 +1,106 @@
+apply plugin: 'com.android.library'
+
+ext {
+    bintrayRepo = 'surveylib'
+    bintrayName = 'surveylib'
+
+    publishedGroupId = 'easygov.saral.harlabh'
+    libraryName = 'surveylib'
+    artifact = 'surveylib'
+
+    libraryDescription = 'core-survey'
+
+    siteUrl = 'https://github.com/Knightkiller123/surveylib'
+    gitUrl = 'https://github.com/Knightkiller123/surveylib.git'
+
+    libraryVersion = '4.5.1'
+
+    developerId = 'easygov'
+    developerName = 'Apoorv Singh'
+    developerEmail = 'apoorv.singh@easygov.co.in'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+buildscript {
+
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+
+    }
+}
+
+apply plugin: 'io.fabric'
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "https://jitpack.io" }
+
+}
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 30
+        versionName '4.5.1'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+
+
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+
+
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:support-vector-drawable:26.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.wefika:flowlayout:0.4.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.nisrulz:qreader:2.0.0'
+    compile 'com.google.android.gms:play-services-location:15.0.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.lzyzsd:circleprogress:1.2.1'
+    compile 'com.github.drawers:SpinnerDatePicker:1.0.6'
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
+}
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/numetriclabz/jcenter/master/bintrayv.gradle'
+
+

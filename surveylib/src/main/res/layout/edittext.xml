@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:alpha="0.6"
+        android:textSize="@dimen/tenSp"
+
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:id="@+id/tveditTitle"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyDp"
+
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+
+        android:layout_marginTop="@dimen/fourDp">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/fortyDp"
+
+    android:singleLine="true"
+
+    android:textSize="@dimen/fourteenSp"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:nextFocusUp = "@+id/etText"
+    android:nextFocusDown="@+id/etText"
+
+    android:textColor="@color/black"
+    android:background="@drawable/edittextunfocused"
+    android:id="@+id/etText"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/round_cross_01"
+        android:padding="@dimen/fourDp"
+        android:visibility="gone"
+        android:id="@+id/ivAppDetailErase"
+        />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/grey"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/sixteenDp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/twelveDp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/sixteenSp"
+        android:text="@string/hometitle"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.v7.widget.CardView
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/sixteenDp"
+        app:cardBackgroundColor="@color/white"
+        android:elevation="@dimen/fourDp"
+        app:cardCornerRadius="@dimen/fourDp"
+        android:id="@+id/cvFor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <View
+                android:layout_alignTop="@+id/tvMyself"
+                android:layout_alignBottom="@+id/tvSomeoneElse"
+                android:background="@color/colorAccent"
+                android:layout_width="@dimen/fourDp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tvMyself"
+                android:textSize="@dimen/fourteenSp"
+                android:padding="@dimen/twentyDp"
+                android:layout_marginStart="@dimen/sixteenDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/myself"/>
+            <TextView
+                android:layout_below="@+id/tvMyself"
+                android:id="@+id/tvFamilyMember"
+                android:layout_marginStart="@dimen/sixteenDp"
+                android:textSize="@dimen/fourteenSp"
+                android:padding="@dimen/twentyDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/familymember"/>
+            <TextView
+                android:layout_below="@+id/tvFamilyMember"
+                android:id="@+id/tvSomeoneElse"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_marginStart="@dimen/sixteenDp"
+                android:padding="@dimen/twentyDp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/someoneelse"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="gone"
+    android:id="@+id/rlSignUp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:text="@string/signup"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/thirtyTwoDp"
+            android:layout_marginLeft="@dimen/thirtyTwoDp"
+            android:layout_marginRight="@dimen/thirtyTwoDp"
+            android:elevation="@dimen/fourDp"
+            android:visibility="gone"
+            android:background="@color/CardUnselected"
+            app:cardCornerRadius="@dimen/fourDp"
+            android:layout_height="@dimen/fortyEightDp">
+
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_marginBottom="@dimen/fourDp"
+                android:id="@+id/rgCategory"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/eightDp"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:layout_width="@dimen/zeroDp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/fourteenSp"
+                    android:id="@+id/rbUser"
+                    android:layout_marginLeft="@dimen/twentyDp"
+                    android:checked="true"
+                    android:layout_height="wrap_content"
+                    android:text="User"/>
+                <RadioButton
+                    android:layout_width="@dimen/zeroDp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/thirtyTwoDp"
+                    android:id="@+id/rbAgent"
+                    android:textSize="@dimen/fourteenSp"
+                    android:text="Agent"/>
+            </RadioGroup>
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/continueWith"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteenSp"
+            android:layout_marginTop="@dimen/thirtyTwoDp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_weight="1"
+                android:id="@+id/cvSelectAadhaar"
+                android:layout_marginBottom="@dimen/fourDp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+
+                app:cardBackgroundColor="@color/CardUnselected"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        app:srcCompat="@drawable/aadhar_card"
+
+                        android:id="@+id/ivAadhaar"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivAadhaar"
+                        android:text="@string/aadhaar"
+                        android:textSize="@dimen/fourteenSp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_weight="1"
+                android:id="@+id/cvSelectPhone"
+                android:layout_marginBottom="@dimen/fourDp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                app:cardBackgroundColor="@color/CardUnselected"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/phone_01"
+
+                        android:id="@+id/ivPhone"
+
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivPhone"
+                        android:text="@string/phn"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/fourteenSp"
+                        android:layout_marginTop="@dimen/fourDp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whyaadhaar"
+
+                android:textSize="@dimen/fourteenSp"
+                android:gravity="center_vertical"
+                android:id="@+id/tvWhyAadhaar"
+                android:layout_marginLeft="@dimen/thirtySixDp"
+                android:layout_marginTop="@dimen/eightDp"
+                android:padding="@dimen/fourDp"
+                android:drawablePadding="@dimen/fourDp"
+                android:drawableRight="@drawable/help_01"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/whynumber"
+                android:layout_gravity="end"
+                android:gravity="center"
+
+                android:textSize="@dimen/fourteenSp"
+                android:id="@+id/tvWhyNumber"
+                android:padding="@dimen/fourDp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="@dimen/thirtyTwoDp"
+                android:layout_marginTop="@dimen/eightDp"
+                android:drawablePadding="@dimen/fourDp"
+                android:drawableRight="@drawable/help_01"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="@drawable/box"
+        android:paddingTop="@dimen/twelveDp"
+        android:layout_marginLeft="@dimen/thirtyDp"
+        android:layout_marginRight="@dimen/thirtyDp"
+        android:paddingBottom="@dimen/twelveDp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tvNextSignUp"
+        android:textSize="@dimen/twentySp"
+        android:layout_above="@+id/rlBot"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/rlBot"
+        android:layout_marginBottom="@dimen/fortyDp"
+
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvAnchor"
+
+            android:text="@string/already"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/fourDp"
+            android:layout_toRightOf="@+id/tvAnchor"
+            android:id="@+id/tvGoSignIn"
+            android:textStyle="bold"
+            android:textSize="@dimen/fourteenSp"
+            android:textColor="@color/buttoncolor"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:text="@string/signIn"/>
+    </RelativeLayout>
+</RelativeLayout>

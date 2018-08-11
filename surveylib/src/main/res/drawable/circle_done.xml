@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="50dp"
+    android:height="50dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:strokeColor="@color/buttoncolor"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:pathData="M 25 7.5 C 34.664983122 7.5 42.5 15.335016878 42.5 25 C 42.5 34.664983122 34.664983122 42.5 25 42.5 C 15.335016878 42.5 7.5 34.664983122 7.5 25 C 7.5 15.335016878 15.335016878 7.5 25 7.5 Z" />
+    <path
+        android:fillColor="@color/buttoncolor"
+        android:pathData="M 25 13.4 C 31.406503098 13.4 36.6 18.593496902 36.6 25 C 36.6 31.406503098 31.406503098 36.6 25 36.6 C 18.593496902 36.6 13.4 31.406503098 13.4 25 C 13.4 18.593496902 18.593496902 13.4 25 13.4 Z" />
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:strokeLineCap="round"
+        android:pathData="M 20 24.3 L 22.9 27.6 L 31 21.4 " />
+</vector>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:id="@+id/llFamCont"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivDetailBack"
+            app:srcCompat="@drawable/ic_back"/>
+        <TextView
+            android:textStyle="bold"
+            android:textSize="@dimen/fourteenSp"
+            android:textColor="@color/white"
+            android:text="@string/family"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <include layout="@layout/content_family_detail"
+        android:layout_height="wrap_content"
+        android:id="@+id/lJgd"
+        android:layout_marginTop="@dimen/sixtyFourDp"
+        android:layout_width="match_parent"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/sixtyDp"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_below="@+id/lJgd"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvData"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/fourDp"
+        android:id="@+id/cvAddMore"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/fortyEightDp">
+        <TextView
+            android:padding="@dimen/sixteenDp"
+            android:layout_marginStart="@dimen/sixteenDp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/addfamilymember"
+            android:textSize="@dimen/twelveSp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

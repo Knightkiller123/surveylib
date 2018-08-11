@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView
+    android:layout_alignParentTop="true"
+    android:layout_above="@+id/tvNext"
+    android:id="@+id/svData"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:layout_height="wrap_content"
+            android:text="Gender of the beneficiary"
+            />
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Is beneficiary listed in BPL?"
+            />
+        <RadioGroup
+            android:id="@+id/rgInBpl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbInBplYes"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_height="wrap_content"
+                android:text="YES"/>
+            <RadioButton
+                android:id="@+id/rbInBplNo"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Is beneficiary a sports player?"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:id="@+id/rgIsSportsPlayer"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbIsSportsPlayerYes"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_height="wrap_content"
+                android:text="YES"/>
+            <RadioButton
+                android:id="@+id/rbIsSportsPlayerNo"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="NO"/>
+        </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Marital status of beneficiary"
+            />
+        <RadioGroup
+            android:id="@+id/rgMaritalStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbUnmarried"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Unmarried"/>
+            <RadioButton
+                android:id="@+id/rbWidow"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Widow"/>
+            <RadioButton
+                android:id="@+id/rbDivorce"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Divorce"/>
+            <RadioButton
+                android:id="@+id/rbMarried"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Married"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Is beneficiary Orphan/ Destitute?"
+            />
+        <RadioGroup
+            android:id="@+id/rgIsSelfOrphan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbOrphanYes"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/rbOrphanNo"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Marital status of beneficiary's mother"
+            />
+        <RadioGroup
+            android:id="@+id/rgMaritalStatusMother"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbMotherWidow"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Widow"/>
+            <RadioButton
+                android:id="@+id/rbMotherDivorce"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Divorce"/>
+            <RadioButton
+                android:id="@+id/rbMotherMarried"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Married"/>
+
+        <RadioButton
+                android:id="@+id/rbMotherNA"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not Applicable"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:layout_height="wrap_content"
+            android:text="Category of the beneficiary"
+            />
+        <RadioGroup
+            android:id="@+id/rgCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbSC"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SC"/>
+            <RadioButton
+                android:id="@+id/rbDNTs"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DNTs"/>
+            <RadioButton
+                android:id="@+id/rbTapriwas"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tapriwas"/>
+          <RadioButton
+              android:id="@+id/rbOBC"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OBC"/>
+          <RadioButton
+              android:id="@+id/rbGeneral"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General"/>
+          <RadioButton
+              android:id="@+id/rbNomadicStates"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nomadic tribes"/>
+        </RadioGroup>
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/twelveDp"
+            android:textSize="@dimen/sixteenSp"
+            android:text="Annual income of family?"
+            />
+        <RadioGroup
+            android:id="@+id/rgAnnualIncome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rbLessThanLakh"
+                android:layout_width="match_parent"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_height="wrap_content"
+                android:text="Less than 1 lakh"/>
+            <RadioButton
+                android:id="@+id/rbGreatThanLakh"
+                android:textSize="@dimen/fourteenSp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Greater than 1 lakh"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+</ScrollView>
+
+    <TextView
+        android:id="@+id/tvNext"
+        android:gravity="center"
+        android:padding="@dimen/twelveDp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/eightenSp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"/>
+</RelativeLayout>

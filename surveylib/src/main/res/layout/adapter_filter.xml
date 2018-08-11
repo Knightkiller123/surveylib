@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvFilterDate"
+    android:layout_marginLeft="@dimen/activity_vertical_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    android:text="25 Sep,2017"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:id="@+id/rlGetStatus"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fourteenSp"
+            android:text="#572"
+            android:id="@+id/tvFilterId"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/twoDp"/>
+
+        <TextView
+            android:layout_width="@dimen/twoEightyDp"
+            android:layout_height="wrap_content"
+            android:text="Maid Verification"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/sixteenSp"
+            android:gravity="start"
+            android:layout_marginRight="@dimen/eightyDp"
+            android:singleLine="true"
+            android:id="@+id/tvFilterSubCat"
+            android:layout_below="@+id/tvFilterId"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/twoDp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Police Verification"
+            android:textColor="@color/black"
+
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvFilterCategory"
+            android:layout_below="@+id/tvFilterSubCat"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/fourDp"
+            android:layout_marginBottom="@dimen/fourDp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="Innitiated"
+            android:textSize="@dimen/fourteenSp"
+            android:textColor="@color/buttoncolor"
+            android:layout_below="@+id/tvFilterCategory"
+            android:id="@+id/tvFilterStatus"
+            android:layout_marginBottom="@dimen/fourDp"
+            android:layout_marginRight="@dimen/activity_vertical_margin"/>
+    </RelativeLayout>
+</LinearLayout>

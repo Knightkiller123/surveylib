@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="42dp"
+    android:height="30dp"
+    android:viewportWidth="56"
+    android:viewportHeight="44.2">
+
+    <path
+        android:strokeColor="@color/Sign"
+        android:strokeWidth="2"
+        android:strokeMiterLimit="10"
+        android:strokeLineCap="round"
+        android:pathData="M 7.8 1.6 H 53.5 V 36.5 H 7.8 V 1.6 Z" />
+    <path
+        android:fillColor="@color/notifycolor"
+        android:pathData="M 7.6 29.6 C 11.3555362988 29.6 14.4 32.6444637012 14.4 36.4 C 14.4 40.1555362988 11.3555362988 43.2 7.6 43.2 C 3.84446370115 43.2 0.8 40.1555362988 0.8 36.4 C 0.8 32.6444637012 3.84446370115 29.6 7.6 29.6 Z" />
+    <path
+        android:fillColor="#A9A9F7"
+        android:strokeColor="@color/Sign"
+        android:strokeWidth="1.5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 16.8 6.9 L 45.6 6.9" />
+    <path
+        android:fillColor="#A9A9F7"
+        android:strokeColor="@color/Sign"
+        android:strokeWidth="1.5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 16.8 14.7 L 45.6 14.7" />
+    <path
+        android:fillColor="#A9A9F7"
+        android:strokeColor="@color/Sign"
+        android:strokeWidth="1.5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 16.8 22.6 L 45.6 22.6" />
+    <path
+        android:fillColor="#A9A9F7"
+        android:strokeColor="@color/Sign"
+        android:strokeWidth="1.5"
+        android:strokeMiterLimit="10"
+        android:pathData="M 27.9 30.5 L 45.6 30.5" />
+</vector>

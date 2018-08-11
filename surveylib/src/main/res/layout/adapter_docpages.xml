@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/cvDocFurtherSelect"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            app:srcCompat="@drawable/documenticon"/>
+        <TextView
+            android:padding="@dimen/eightDp"
+            android:layout_width="match_parent"
+            android:id="@+id/tvDocHeading"
+            android:alpha="0.9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/tenSp"
+            android:text="@string/upload"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:drawableStart="@drawable/ic_add_attachment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:drawablePadding="@dimen/twentyDp"
+            android:text="@string/attachDocs"
+            android:layout_below="@+id/tvDocHeading"
+            android:background="@drawable/attachment_unselected"
+            android:textColor="@color/colorAttachmentUnSelectText"
+            android:padding="@dimen/sixteenDp"
+            android:maxLines="2"
+            android:layout_marginStart="@dimen/eightDp"
+            android:layout_marginEnd="@dimen/eightDp"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvDocFurther"
+            android:layout_marginBottom="@dimen/eightDp"/>
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/round_cross_01"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/ivCrossDocs"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/eightDp"
+            android:layout_marginTop="@dimen/eightDp"
+            android:padding="@dimen/fourDp"/>
+    </RelativeLayout>
+
+</LinearLayout>
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:id="@+id/cvDocFurtherSelect"
+            android:background="@drawable/attachment_unselected"
+
+            android:layout_height="@dimen/oneHundredDp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                app:srcCompat="@drawable/documenticon"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:maxLines="2"
+                android:layout_marginLeft="@dimen/eightDp"
+                android:layout_marginRight="@dimen/eightDp"
+                android:textSize="@dimen/twelveSp"
+                android:id="@+id/tvDocFurther"
+                android:layout_marginBottom="@dimen/eightDp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/round_cross_01"
+                android:layout_alignParentRight="true"
+                android:id="@+id/ivCrossDocs"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/eightDp"
+                android:layout_marginTop="@dimen/eightDp"
+                android:padding="@dimen/fourDp"/>
+        </RelativeLayout>
+
+</LinearLayout>-->

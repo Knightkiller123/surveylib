@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/rlSearchContainer"
+    android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:background="@color/notifycolor">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/searchapplication"
+            android:textColor="@color/white"
+            android:textSize="@dimen/eightenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/eightDp"
+            android:id="@+id/ivSearchApplicationBack"
+            android:padding="@dimen/eightDp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/twentyDp"
+        android:layout_marginEnd="@dimen/twentyDp"
+        android:layout_marginTop="@dimen/oneHundredDp"
+
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eightDp"
+            android:id="@+id/rlSearchOption"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fortyDp"
+                android:text="@string/searchoptn"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/fourteenSp"
+                android:id="@+id/tvSearchOption"
+                android:background="@drawable/spinnerlookalike"
+                android:paddingLeft="@dimen/activity_vertical_margin"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/spinnerdownicon"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/eightDp"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginStart="@dimen/eightDp"
+            android:textColor="@color/notifycolor"
+            android:textSize="@dimen/twelveSp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fourDp"
+            android:textSize="@dimen/fourteenSp"
+            android:singleLine="true"
+            android:id="@+id/etSearchOption"
+            />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fortyEightDp"
+            android:background="@color/darkgrey"
+            android:text="@string/search"
+            android:gravity="center"
+            android:textSize="@dimen/eightenSp"
+            android:textColor="@color/white"
+            android:id="@+id/tvSearchApplication"
+            android:layout_margin="@dimen/thirtyTwoDp"/>
+    </LinearLayout>
+</RelativeLayout>

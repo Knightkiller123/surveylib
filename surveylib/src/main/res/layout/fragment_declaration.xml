@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlSelfDec"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/selfDeclaration"
+        android:gravity="center"
+        android:textSize="@dimen/twentySp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/tvHeadselfDec"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/eightDp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvHeadselfDec"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="@dimen/eightDp"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eightDp"
+android:layout_marginRight="@dimen/eightDp"
+            android:padding="@dimen/twoDp"
+            android:textSize="@dimen/fourteenSp"
+            android:textColor="@color/black"
+            android:id="@+id/tvSelfName"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:layout_marginRight="@dimen/eightDp"
+            android:padding="@dimen/twoDp"
+            android:layout_marginTop="@dimen/eightDp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvSelfName1"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/eightDp"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:textSize="@dimen/fourteenSp"
+            android:id="@+id/tvDeclarationPlace"
+            android:text="Place : "/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sixtyDp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/Sign"
+        android:weightSum="2">
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/dont"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"
+            android:id="@+id/tvNoAccept"/>
+        <View
+            android:layout_width="@dimen/oneDp"
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/twelveDp"
+            android:layout_marginBottom="@dimen/twelveDp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="@dimen/zeroDp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/accept"
+            android:gravity="center"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"
+            android:id="@+id/tvAccept"/>
+    </LinearLayout>
+</RelativeLayout>

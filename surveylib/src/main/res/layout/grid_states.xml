@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/eightDp"
+    android:layout_marginRight="@dimen/eightDp"
+    android:layout_marginTop="@dimen/eightDp"
+    android:id="@+id/llStateGrid">
+
+    <ImageView
+        android:id="@+id/cvStates"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStateTitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/tenSp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+</LinearLayout>

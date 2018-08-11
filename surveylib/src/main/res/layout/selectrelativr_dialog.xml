@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlFileSelect"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:id="@+id/rlDocClose"
+        android:background="@color/black"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/oneTwentyDp"
+        android:layout_marginBottom="@dimen/eightyDp"
+        android:layout_marginLeft="@dimen/twentyFourDp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="4.2"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginRight="@dimen/twentyFourDp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+
+            android:text="@string/addrelative"
+            android:gravity="center"
+            android:id="@+id/tvfamtop"
+            android:background="@color/notifycolor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sixteenSp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/cross"
+            android:padding="@dimen/fourDp"
+            android:id="@+id/ivCrossFamily"
+            android:layout_marginEnd="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/twentyDp"
+            android:layout_alignParentEnd="true"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etNameRelative"
+            android:hint="@string/firstName"
+            android:singleLine="true"
+            android:layout_below="@+id/tvfamtop"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sixteenSp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/eightDp"
+            android:layout_marginBottom="@dimen/eightDp"
+            android:id="@+id/llFamily"
+            android:layout_below="@+id/etNameRelative"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/familymemberques"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginTop="@dimen/eightDp"
+                android:alpha="0.6"
+                android:textSize="@dimen/tenSp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/fortyDp"
+                    android:spinnerMode="dialog"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin"
+
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:layout_marginTop="@dimen/fourDp"
+                    android:background="@drawable/spinnerlookalike"
+
+                    android:id="@+id/spSpinFamily"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/spinnerdownicon"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/twentyEightDp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixtyDp"
+            android:text="@string/Saved"
+            android:gravity="center"
+            android:id="@+id/tvSaveRelative"
+            android:background="@color/buttoncolor"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twentySp"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

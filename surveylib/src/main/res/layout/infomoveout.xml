@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:id="@+id/rlnotEligible1"
+
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.6"
+        android:id="@+id/rlDocClose"
+        android:background="@color/black"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneTwentyDp"
+        android:layout_marginTop="@dimen/twoHundredDp"
+        android:layout_marginBottom="@dimen/oneSixtyDp"
+        android:layout_marginRight="@dimen/twentyFourDp"
+        app:cardCornerRadius="@dimen/eightDp"
+        android:elevation="@dimen/fourDp"
+        android:layout_marginLeft="@dimen/twentyFourDp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/oneTwentyDp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:weightSum="4.2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thirtyTwoDp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="Are You sure you want Skip this?"
+                android:gravity="center"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteenSp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:layout_alignParentBottom="true">
+                <TextView
+                    android:layout_width="@dimen/zeroDp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/buttoncolor"
+                    android:id="@+id/tvCancel"
+                    android:padding="@dimen/activity_vertical_margin"
+                    android:layout_marginRight="@dimen/eightDp"
+
+                    android:text="@string/cancel"/>
+            <TextView
+                android:layout_width="@dimen/zeroDp"
+                android:layout_height="wrap_content"
+               android:layout_weight="1"
+                android:layout_gravity="center"
+               android:gravity="center"
+                android:textSize="@dimen/fourteenSp"
+                android:textColor="@color/buttoncolor"
+                android:id="@+id/tvOkLeave"
+                android:padding="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/eightDp"
+
+                android:text="@string/ok"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

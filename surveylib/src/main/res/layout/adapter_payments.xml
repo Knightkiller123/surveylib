@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/eightDp"
+    android:layout_marginBottom="@dimen/eightDp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:text="Police Verification"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_toLeftOf="@+id/tvPaymentAmount"
+        android:gravity="start"
+        android:id="@+id/tvPaymentName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="690"
+        android:textSize="@dimen/sixteenSp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:id="@+id/tvPaymentAmount"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/tvPaymentName"
+        android:layout_marginTop="@dimen/fourDp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/fourteenSp"
+        android:text="Maid Verification"
+        android:id="@+id/tvPaymentSubName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/tvPaymentSubName"
+        android:layout_marginTop="@dimen/eightDp"
+        android:text="31/10.1993"
+
+        android:textSize="@dimen/fourteenSp"
+        android:id="@+id/tvPaymentDate"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/oneDp"
+        android:layout_below="@+id/tvPaymentDate"
+        android:layout_marginTop="@dimen/eightDp"
+        android:layout_marginBottom="@dimen/twoDp"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/tvPaymentDate"
+        android:layout_marginTop="@dimen/twentyFourDp"
+        android:layout_marginBottom="@dimen/fourDp"
+        android:gravity="start"
+        android:textSize="@dimen/fourteenSp"
+        android:layout_toLeftOf="@+id/tvPaymentStatus"
+        android:id="@+id/tvPaymentTransaction"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/twentyFourDp"
+        android:layout_below="@+id/tvPaymentDate"
+        android:layout_marginBottom="@dimen/fourDp"
+        android:text="innitiated"
+        android:textSize="@dimen/fourteenSp"
+        android:background="@drawable/statusindicator"
+        android:textColor="@color/white"
+        android:paddingTop="@dimen/fourDp"
+        android:paddingBottom="@dimen/fourDp"
+        android:paddingLeft="@dimen/eightDp"
+        android:paddingRight="@dimen/eightDp"
+        android:layout_marginStart="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_vertical_margin"
+        android:id="@+id/tvPaymentStatus"/>
+</RelativeLayout>
